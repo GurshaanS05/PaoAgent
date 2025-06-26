@@ -65,7 +65,7 @@ MARKETING_TEMPLATE = '''I hope this email finds you well!
 
 My name is {sender_name}, and I am one of the founders of Toolforthat.io, a platform dedicated to providing the perfect tech tools for users' needs. We index a wide range of products and tools to allow users to streamline their workflows.
 
-After viewing your product, we believe it would be an excellent addition to our platform. {product_sentence} We'd love to feature this innovative product on Toolforthat for free and help you gain visibility among potential users. Over the past 10 days, we have had over 10,000 searches on our website.
+After viewing your product, we believe it would be an excellent addition to our platform. "{product_sentence}" We'd love to feature this innovative product on Toolforthat for free and help you gain visibility among potential users. Over the past 10 days, we have had over 10,000 searches on our website.
 
 You can add information about your product here: https://toolforthat.io/submit-your-tool
 
@@ -78,8 +78,6 @@ Best,
 Sachin @ Toolforthat.io
 
 --If you want to stop receiving these emails, please reply with "STOP" in the subject line.
-
-sup lol
 '''
 
 class CompanyEmailGenerator:
@@ -90,7 +88,6 @@ class CompanyEmailGenerator:
         self.company_name = company_name
         self.recipient_email = email.strip()
         self.short_desc = short_desc
-        self.full_desc = full_desc
         self.attachment_path = attachment_path
         self.email_message = None
 
@@ -104,11 +101,11 @@ class CompanyEmailGenerator:
         self.create_email_message(product_sentence)
 
     def generate_product_sentence(self):
-        """Generate a single sentence describing the product using short and full description."""
+        """Generate a single sentence describing the product using short description only."""
         try:
             prompt = (
                 f"Write one concise, positive sentence describing the product based on the following information. "
-                f"Short description: {self.short_desc}\nFull description: {self.full_desc}\n"
+                f"Short description: {self.short_desc}\n"
                 f"The sentence should be suitable for a marketing email to the product's creators."
             )
             response = client.chat.completions.create(model=OPENAI_MODEL,
@@ -119,7 +116,6 @@ class CompanyEmailGenerator:
             max_tokens=60,
             temperature=0.7)
             content = response.choices[0].message.content.strip()
-            # Ensure it's a single sentence (strip trailing periods, etc.)
             return content
         except Exception as e:
             print(f"Error generating product description for {self.company_name}: {e}")
