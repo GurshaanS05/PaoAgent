@@ -69,13 +69,13 @@ After viewing your product, we believe it would be an excellent addition to our 
 
 You can add information about your product here: https://toolforthat.io/submit-your-tool
 
-If you are interested in gaining more visibility by working with us, please feel free to respond to this email, and we can set up a time to chat!
+If you are interested in gaining more visibility by displying your product on our landing page, please feel free to respond to this email, and we can set up a time to chat!
 
 Looking forward to hearing from you!
 
 Best,
 
-Sachin @ Toolforthat.io
+{sender_name} @ Toolforthat.io
 
 --If you want to stop receiving these emails, please reply with "STOP" in the subject line.
 '''
