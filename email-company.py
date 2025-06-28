@@ -16,7 +16,7 @@ load_dotenv()
 EMAIL = os.getenv("EMAIL_ADDRESS")
 APP_PASSWORD = os.getenv("EMAIL_PASSWORD")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-COMPANY_LIST_PATH = os.getenv("COMPANY_LIST_PATH", "ai_companies.csv")
+COMPANY_LIST_PATH = os.getenv("COMPANY_LIST_PATH", "test_companies.csv")
 CV_PDF_PATH = os.getenv("CV_PDF_PATH", "cv/cv.pdf")
 PROMPT_TEMPLATE_PATH = os.getenv("PROMPT_TEMPLATE_PATH", "prompt-template/email-company.txt")
 
@@ -61,24 +61,30 @@ def read_text_file(file_path, description=""):
         return None
 
 # Fixed marketing template (with placeholder for product description sentence)
-MARKETING_TEMPLATE = '''I hope this email finds you well!
+MARKETING_TEMPLATE = '''Helloooo {company_name}!
 
-My name is {sender_name}, and I am one of the founders of Toolforthat.io, a platform dedicated to providing the perfect tech tools for users' needs. We index a wide range of products and tools to allow users to streamline their workflows.
+My name is Sachin, and I am one of the founders of https://Toolforthat.io, a platform dedicated to providing the perfect tech tools for users' needs. We index a wide range of products and tools (including yours) to allow users to streamline their workflows. We currently have a database of over 5,000 tools and receive over 20,000 monthly requests. 
 
-After viewing your product, we believe it would be an excellent addition to our platform. "{product_sentence}" We'd love to feature this innovative product on Toolforthat for free and help you gain visibility among potential users. Over the past 10 days, we have had over 10,000 searches on our website.
+One of our most popular requests is "{short_desc}", so we know that {company_name} is perfect for our site. We'd love to help you grow your visibility on our platform and boost your user count even more. 
 
-You can add information about your product here: https://toolforthat.io/submit-your-tool
+You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
 
-If you are interested in gaining more visibility by displying your product on our landing page, please feel free to respond to this email, and we can set up a time to chat!
+If you're interested in being the #1 tool on our site, we'd love to connect. 
+
+For just $2 a day, {company_name} can be featured on the front page of ToolForThat.io.
+
+If anything above interests you, please feel free to respond to this email (or book a time on calendly), and we can set up a time to chat.
 
 Looking forward to hearing from you!
 
 Best,
 
-{sender_name} @ Toolforthat.io
+Sachin @ Toolforthat.io
+
 
 --If you want to stop receiving these emails, please reply with "STOP" in the subject line.
 '''
+
 
 class CompanyEmailGenerator:
     """Email generator for Toolforthat marketing outreach."""
@@ -124,10 +130,10 @@ class CompanyEmailGenerator:
     def create_email_message(self, product_sentence):
         """Create the complete marketing email message with proper formatting and attachments."""
         try:
-            subject = "Feature your product on Toolforthat.io"
+            subject = f"Gain Users & Boost Visibility for {self.company_name}"
             body = MARKETING_TEMPLATE.format(
-                sender_name=SENDER_NAME,
-                product_sentence=product_sentence
+                company_name=self.company_name,
+                short_desc=self.short_desc
             )
             msg = MIMEMultipart()
             msg['From'] = f"{SENDER_NAME} <{EMAIL}>"
