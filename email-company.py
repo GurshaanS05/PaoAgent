@@ -69,9 +69,7 @@ One of our most popular requests is "{short_desc}", so we know that {company_nam
 
 You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
 
-If you're interested in being the #1 tool on our site, we'd love to connect. 
-
-For just $49 a month, {company_name} can be featured on the front page of ToolForThat.io.
+If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing
 
 If anything above interests you, please feel free to respond to this email (or book a time on calendly), and we can set up a time to chat.
 
