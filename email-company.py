@@ -61,15 +61,18 @@ def read_text_file(file_path, description=""):
         return None
 
 # Fixed marketing template (with placeholder for product description sentence)
-MARKETING_TEMPLATE = '''Helloooo {company_name}!
+MARKETING_TEMPLATE = '''
+TL;DR: We help people discover tools like {company_name} through our growing platform (25,000+ searches so far). You can list your product for free or boost visibility with paid promotions (10% off with code TOOL10). Add your tool here: https://toolforthat.io/submit-your-tool. Check out our premium plans here: https://Toolforthat.io/pricing.
 
-My name is Sachin, and I am one of the founders of https://Toolforthat.io, a platform dedicated to providing the perfect tech tools for users' needs. We index a wide range of products and tools (including yours) to allow users to streamline their workflows. We currently have a database of over 5,000 tools and receive over 20,000 monthly requests. 
+Hey {company_name}!
 
-One of our most popular requests is "{short_desc}", so we know that {company_name} is perfect for our site. We'd love to help you grow your visibility on our platform and boost your user count even more. 
+My name is Sachin and I am one of the founders of https://toolforthat.io.
 
-You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
+We are a platform where users can search for things they are building, creating or just need help with and our search engine indexes the best tools available. We are dropping a completely new update to our website. We launched back in January, where we have had over 25,000 searches on our platform. This new revamp should take us to a whole new level. 
 
-If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing. We'd love to offer you a discount of 10%% on your first promotion with discount code TOOL10!
+One of our most popular requests is "{short_desc}," so we know that {company_name} is perfect for our site. We're excited to help you grow your visibility on our platform and boost your user count even more. You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
+
+If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing. We'd  to offer you a discount of 10% on your first promotion with discount code TOOL10!
 
 If anything above interests you, please feel free to respond to this email (or book a time on calendly), and we can set up a time to chat.
 
@@ -129,7 +132,7 @@ class CompanyEmailGenerator:
     def create_email_message(self, product_sentence):
         """Create the complete marketing email message with proper formatting and attachments."""
         try:
-            subject = f"Gain Users & Boost Visibility for {self.company_name}"
+            subject = f"Boost Your Visibility on Toolforthat.io 🚀"
             body = MARKETING_TEMPLATE.format(
                 company_name=self.company_name,
                 short_desc=self.short_desc
