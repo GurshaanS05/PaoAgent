@@ -1,0 +1,538 @@
+company_name,contact_name,email,short_description,full_description
+Random Translator,Random Translator Team,contact@randomtranslator.com,powerful context-aware literary translation platform,"Random Translator is a SaaS platform that preserves tone, nuance, and narrative flow when translating novels and long‑form fiction."
+Akiflow,Akiflow team,support@akiflow.com,task and time‑blocking productivity tool,Akiflow is a unified task manager that integrates with calendars and email to streamline your planning and focus.
+Vimcal,Vimcal team,aloha@vimcal.com,lightning‑fast calendar with smart booking,"Vimcal is a high‑performance calendar app designed for heavy meeting loads, offering natural‑language event creation and instant availability sharing."
+Zapier,Zapier team,press@zapier.com,powerful automation platform,Zapier is an automation service that connects apps and services to automate workflows without coding.
+Asana press,Asana team,press@asana.com,media & press inquiries,Asana's press email handles all media and brand‑guideline related inquiries.
+Airtable,Airtable support,support@airtable.com,standard customer support via email,Airtable offers email-based support (typically 1–2 business days) for account and billing inquiries.
+Sidemail,Sidemail team,support@sidemail.io,transactional email API & delivery service,"Sidemail is a developer-friendly email platform for SaaS offering easy setup, reliable transactional and newsletter delivery via API."
+The Wild,The Wild press,media@thewild.com,media inquiries for VR collaboration,Media@thewild.com handles press and media requests regarding the platform.
+Wellthy,Wellthy support,support@wellthy.com,concierge care coordination platform,Wellthy provides care concierge services for families managing health and eldercare needs.
+Rasa,Rasa team,hello@rasa.io,newsletter engagement automation platform,Rasa provides an AI-powered solution to help businesses automate and grow their newsletter subscriber engagement.
+Ticker Capital,Ticker Capital team,q@ticker.capital,blockchain investment consultancy,Ticker Capital is a fund focusing on early-stage blockchain technology investments.
+Docsie,Docsie team,hello@docsie.io,AI-first documentation platform,"Docsie offers versioned, collaborative, and AI-powered documentation for SaaS teams."
+Customer.io,Customer.io team,win@customer.io,behavioral messaging automation tool,"Customer.io enables businesses to send targeted messages via email, SMS, and push based on user behavior."
+Scribe,Scribe team,contact@scribehow.com,AI-powered SOP and guide creator,Scribe automatically generates step-by-step guides and SOPs from workflows to save teams time on documentation.
+x.ai,x.ai support,support@x.ai,AI meeting scheduling assistant,x.ai offers an AI-powered assistant that handles meeting scheduling tasks via email.
+DelightChat,DelightChat sales,sales@delight.chat,omnichannel support & WhatsApp marketing tool,DelightChat provides unified customer support inbox and WhatsApp-based marketing automation for D2C brands.
+Dashly,Dashly team,info@dashly.io,all‑in‑one customer messaging & live chat platform,"Dashly enables businesses to manage live chat, chatbots, email campaigns, and helpdesk support from one interface."
+Saufter,Saufter team,hello@saufter.io,customer messaging automation tool,"Saufter offers prebuilt automation workflows to automate customer communications across channels like email, chat, and social media."
+PromptPerfect,PromptPerfect team,heyo@promptperfect.xyz,prompt optimization tool,PromptPerfect helps users refine and optimize prompts for better AI output with targeted tuning for large language models.
+Readwise,Readwise team,hello@readwise.io,reading progress tracker,"Readwise syncs highlights, tracks reading progress, and helps retain knowledge from books and articles."
+Mailchimp,Mailchimp Support,customersupport@mailchimp.com,email marketing platform,"Mailchimp offers tools for designing campaigns, A/B testing subject lines, tracking performance, and automating email marketing."
+Thunkable,Thunkable team,hello@thunkable.com,no-code prototyping tool,A no-code mobile app prototyping tool that allows drag-and-drop design and real-time preview.
+Maze,Maze team,help@maze.design,user testing platform,A user testing platform for gathering feedback on your app prototype from real users.
+Remove.bg,Remove.bg support team,support@remove.bg,image background removal tool,A tool that uses AI to automatically remove image backgrounds with high accuracy and batch-processing support.
+Canva,Canva Support,support@canva.com,graphic design platform,"A design tool that includes background removal, templates, and drag-and-drop features for creating visual content."
+Grammarly,Grammarly Support,support@grammarly.com,grammar assistant tool,"An AI-powered writing assistant for grammar, spelling, tone, and clarity while writing across platforms."
+Wordtune,Wordtune Privacy,privacy@wordtune.com,AI rewriting tool,For privacy-related queries and data protection concerns.
+MySocialBook,MySocialBook team,help@mysocialbook.com,social media book creation tool,A service that compiles social media posts into printable book formats with layout templates.
+ElevenLabs,ElevenLabs support,legal@elevenlabs.io,AI voice generation tool,An AI voice generator that supports realistic voices in different languages and regional accents.
+PlayHT,PlayHT support,support@play.ht,AI voice generation tool,An AI voice generator that supports realistic voices in different languages and regional accents.
+SunCalc,SunCalc team,torsten@torsten-hoffmann.de,sunlight simulation tool,A sunlight simulation tool for mapping natural light paths through floor plans or windows.
+Archilogic,Archilogic Support,support@archilogic.com,sunlight/floor plan simulation tool,A sunlight simulation tool for mapping natural light paths through floor plans or windows.
+Postman,Postman team,info@postman.com,API testing tool,"An API testing platform with a GUI for sending requests, viewing responses, and testing integrations."
+Hoppscotch,Hoppscotch team,support@hoppscotch.io,API testing tool,"An API testing platform with a GUI for sending requests, viewing responses, and testing integrations."
+Reclaim.ai,Reclaim.ai team,support@reclaim.ai,smart planner tool,"A smart planner that schedules tasks based on your energy, mood, and productivity patterns."
+Motion,Motion team,,smart planner tool,"A smart planner that schedules tasks based on your energy, mood, and productivity patterns."
+Huckleberry,Huckleberry team,support@huckleberry-labs.com,baby milestone tracker tool,"An app designed to log baby development, feeding, sleep, and milestone achievements."
+BabyCenter,BabyCenter team,customerservice@babycenter.com,baby milestone tracker tool,"An app designed to log baby development, feeding, sleep, and milestone achievements."
+Felt,Felt support,hi@feltapp.com,digital postcard tool,A platform for designing and sending digital postcards with animations or photos.
+Touchnote,Touchnote support,help@touchnote.com,digital postcard tool,A platform for designing and sending digital postcards with animations or photos.
+Vivino,Vivino Support,support@vivino.com,wine pairing app,"A wine pairing app that suggests wines based on your meal, cuisine, or ingredients."
+Pedometer++,Pedometer++ team,pedometerplusplus@crossforward.com,step tracking app,A step tracking app that uses phone or smartwatch sensors to log activity indoors and outdoors.
+Google Fit,Google Fit Support,eea-support@google.com,step tracking app,A step tracking app that uses phone or smartwatch sensors to log activity indoors and outdoors.
+GeoSure,GeoSure team,dev@geosureglobal.com,personal safety mapping tool,"A mapping app that prioritizes well-lit, low-crime walking paths based on user data and safety scores."
+Paint My Place,Paint My Place team,bonco.dev@gmail.com,interior paint visualization tool,A home decor visualization app that uses AR to preview wall colors in your space.
+Punchbowl,Punchbowl Support,help@punchbowl.com,event planning RSVPs tool,"An event planning tool with private invites, RSVP tracking, and task management."
+Partiful,Partiful team,support@partiful.com,event planning RSVPs tool,"An event planning tool with private invites, RSVP tracking, and task management."
+Credit Karma,Credit Karma team,help@creditkarma.com,credit monitoring app,A financial monitoring app that explains credit score shifts and gives actionable tips.
+Experian,Experian team,care@experian.com,credit monitoring app,A financial monitoring app that explains credit score shifts and gives actionable tips.
+Day One,Day One support,support@dayoneapp.com,journaling app with audio,"A digital journaling tool that supports voice notes, images, and searchable tags."
+Penzu,Penzu support,help@penzu.com,journaling app with audio,"A digital journaling tool that supports voice notes, images, and searchable tags."
+Spotify Collaborative Playlists,Spotify support,community-support@spotify.com,collaborative playlist tool,A collaborative music platform where multiple users can contribute to and edit playlists.
+JQBX,JQBX team,support@jqbx.fm,collaborative playlist tool,A collaborative music platform where multiple users can contribute to and edit playlists.
+Looka,Looka Support,support@looka.com,AI logo and website generator,A platform that generates logos using AI and instantly applies them to website templates.
+Durable,Durable Support,support@durable.co,AI website builder,A platform that generates logos using AI and instantly applies them to website templates.
+Builder.io,Builder.io Support,support@builder.io,front‑end app builder,A low‑code or no‑code app builder focused on front‑end UI creation and deployment.
+Framer,Framer Support,support@framer.com,front‑end app builder,A drag‑and‑drop frontend builder that integrates with APIs and databases.
+Webflow,Webflow Support,support@webflow.com,front‑end app builder,Component‑based design tool optimized for developers.
+Locofy,Locofy Support,support@locofy.ai,front‑end app builder,AI code assistant to generate front‑end layouts quickly.
+Zinnia,Pixite Inc.,info@pixiteapps.com,support@zinniajournal.com,planner/journal app
+Notion,Notion Labs,team@makenotion.com,press@makenotion.com; affiliates@makenotion.com; privacy@makenotion.com,workspace and productivity platform
+Aura,Aura support,support@aura.com,hello@aurahealth.io,digital security & identity protection
+Shine,ShinePay,customerservice@shineco.com,support@shineon.com,banking/business account service
+OurHome,OurHome app,info@elusios.com,contact@elusios.com,family chore & task management
+Cozi,Cozi Family Organizer,support@cozi.com,support@cozi.com,shared family calendar & organizer
+Genially,Genially LLC,christian.ext@genially.com,conchi.ruiz@genially.com,interactive content creation tool
+Twine,Twine Support,support@twine.nyc,colinmarc@gmail.com,interactive storytelling tool
+Analytics Model (ManageEngine Analytics Plus),Analytics Plus Support,analyticsplus-support@manageengine.com,advanced analytics solution,An advanced analytics solution that correlates data islands to instantly provide insights in the form of rich visuals and interactive dashboards.
+AiPPT,AiPPT Support,support@aippt.com,AI slideshow maker,An intelligent and innovative slideshow maker tool dedicated to providing convenient and efficient presentation production experiences.
+LeadsNavi,LeadsNavi Support,info@leadsnavi.com,website visitor identification,A website visitor identification tool designed to help businesses understand which companies are visiting their site.
+Eden,Eden AI Specialists,specialists@edenai.co.za,AI integration platform,"A platform designed to simplify AI integration by managing monitoring, observability, orchestration, and provider management in a single interface."
+Pointer AI,Pointer AI Admin,admin@getpointer.ai,AI coding assistant,"An AI-powered coding assistant designed to help developers write, analyze, and improve code more efficiently."
+Saima,Saima Tech Support,tech@saima.ai,AI video speed controller,An AI video speed controller designed to optimize comprehension and efficiency while watching videos.
+Ollie.ai,Ollie.ai Legal,legal@confabulation.ai,family AI assistant,"A family AI assistant that writes new recipes, meal plans, and grocery lists."
+AISmartCube,AISmartCube Business,business@toolify.ai,AI data analysis platform,An AI-powered platform that offers data analysis and automation solutions for businesses.
+Prepin.ai,Oleh Savchuk,oleh.savchuk@prepin.ai,educational technology tool,"An advanced educational technology tool that automates the creation, administration, and grading of mock tests."
+MyStylus.ai,MyStylus.ai Support,support@mystylus.ai,AI writing assistant,"An advanced AI writing assistant designed for students, researchers, and writers."
+Devin AI,Devin AI Support,hello@devinai.com,autonomous AI assistant,"An autonomous artificial intelligence assistant tool created by Cognition Labs, branded as an 'AI software developer.'"
+Sora (OpenAI),OpenAI Support,support@openai.com,text-to-video model,A text-to-video model developed by OpenAI that generates short video clips based on user prompts.
+Rabbitholes (Straico),Straico Support,hello@straico.com,conversational AI platform,"An advanced conversational platform designed for deep, explorative interactions with multiple AI models on an infinite canvas."
+FlowHunt,FlowHunt Support,support@liveagent.com,no-code AI platform,"A no-code platform that enables users to build, deploy, and manage AI tools and chatbots."
+Polymet,Polymet Support,support@polymet.ai,AI product designer,An AI product designer that uses AI to help non-designers create production-ready designs and front-end code.
+Polymet,Polymet Information,info@polymet.ai,AI product designer,An AI product designer that uses AI to help non-designers create production-ready designs and front-end code.
+SuperPodcast.ai (SuperOps),SuperOps Contact,contact@superops.com,SuperOps tool,"A tool likely associated with SuperOps, though specific functionality for SuperPodcast.ai was not detailed."
+Topical,Topical Support,support@topicalmeetings.com,meeting management tool,"A tool for managing and organizing meetings, likely with AI features for agenda or note-taking."
+Retro Diffusion,Retro Diffusion Support,support@astropulse.co,AI pixel art generator,A set of specifically trained AI models designed to create high quality pixel art assets.
+Autoflow,Autoflow Support,support@autoflow.com,ventilation control tool,"An adjunct to volume controlled ventilation mode, automatically regulating inspiratory flow and pressure."
+Waterllama,Waterllama Support,hello@waterllama.com,hydration tracker app,A hydration tracker app that reminds you to drink and logs your daily water intake.
+Waterllama,Waterllama Support,help@waterllama.com,hydration tracker app,A hydration tracker app that reminds you to drink and logs your daily water intake.
+Plant Nanny,Plant Nanny Sales,sales@plantnanny.com,hydration tracker app,A hydration tracker app that reminds you to drink and logs your daily water intake.
+Carbonmade,Carbonmade Help,hello@carbonmade.com,portfolio builder,"A portfolio builder for creatives that's fast, clean, and mobile-friendly."
+Day One,Day One Support,support@dayoneapp.com,minimalist journaling app,A minimalist journaling app made for quick daily entries and mood tracking.
+Grid Diary,Grid Diary Support,support@griddiary.app,minimalist journaling app,A minimalist journaling app made for quick daily entries and mood tracking.
+ClipboardFusion,ClipboardFusion Sales,sales@clipboardfusion.com,clipboard history tool,A clipboard history tool for speeding up repetitive tasks.
+ClipboardFusion,ClipboardFusion Support,support@clipboardfusion.com,clipboard history tool,A clipboard history tool for speeding up repetitive tasks.
+Leave Me Alone,Leave Me Alone Support,hello@leavemealone.app,email unsubscribe tool,A browser extension that helps you unsubscribe and clean inbox clutter.
+Codeium,Codeium Privacy,privacy@codeium.com,AI code assistant,An AI assistant that reviews code for bugs and style issues.
+Infinity New Tab,Infinity New Tab Support,infinitynewtab@gmail.com,shortcut launcher,A shortcut launcher built into your new tab.
+Freedom,Freedom Support,support@freedom.to,distraction blocker,A distraction blocker that schedules focused sessions and locks time-wasting apps.
+Bonsai,Bonsai Support,support@hellobonsai.com,freelance business manager,"A freelance business manager for projects, invoices, and client CRM."
+AND.CO,AND.CO Support,contactus@andcomanagement.com,time tracking tool,"A smart tracker for logging hours, due dates, and invoices in one place."
+Height,Height Support,paul@height.app,project board tool,A project board tool with clean UI and timeline view.
+Expensify,Expensify Concierge,concierge@expensify.com,receipt scanner,A mobile scanner that turns receipts into categorized digital entries.
+Dext,Dext Support,support@dext.com,OCR bulk upload tool,OCR-based tool for bulk uploading into QuickBooks or Xero.
+Clover Planning,Clover Planning,Cloverplanning@protonmail.com,shared task app,A shared to-do + chat combo for friend group coordination.
+Figma Dev Mode,Figma Dev Mode Support,support-share@figma.com,code snippet generator,A plugin that auto-generates code snippets from UI files.
+Hearty Journal,Hearty Journal Support,46jzwia2w@relay.firefox.com,personal growth tracker,A personal growth tracker that turns entries into visual graphs.
+Geekbot,Geekbot Support,support@geekbot.com,Slack standup bot,A daily standup bot that integrates with Slack.
+CamCard,CamCard Support,isupport@intsig.com,business card scanner,A mobile scanner that reads business cards and syncs to your contacts.
+Covve,Covve Support,support@covve.com,CRM contact enrichment,A CRM add-on that turns scanned cards into enriched profiles.
+Bardeen,Bardeen Support,support@bardeen.ai,browser automation tool,A browser automation tool enhanced with AI to record/play macros and scrape data.
+Eddie AI,Eddie AI Support,hey@heyeddie.ai,AI video editor,An AI video editor that syncs multi-cam clips and cuts by prompt.
+Assista AI,Assista AI Support,hello@aiagentslist.com,conversational AI automation,"A conversational AI automation tool for Gmail, Slack, CRM tasks."
+Autocut,Autocut Customer Care,stihlcs@stihl.us,Premiere plugin,"A Premiere plugin with better multicam tools and shortcuts (Note: this email is for STIHL AutoCut mowing head, not the video editing tool)."
+FilmConvert,FilmConvert Support,support@filmconvert.com,effects suite,An effects suite for transitions and color grading.
+Codeium,Codeium Privacy,privacy@codeium.com,AI coding assistant,An AI coding assistant for inline suggestions.
+Expensify,Expensify Concierge,concierge@expensify.com,receipt scanning app,A receipt scanning app that categorizes and syncs with accounting.
+Dext,Dext Support,support@dext.com,receipt scanning app,A receipt scanning app that categorizes and syncs with accounting.
+Folk,Folk Support,fai@folk.org,CRM-lite tool,CRM-lite for keeping track of client convos and deliverables.
+Clean Email,Clean Email Support,support@clean.email,inbox cleaner,An inbox cleaner to unsubscribe and reduce noise.
+Hearty Journal,Hearty Journal Support,46jzwia2w@relay.firefox.com,reflection journal,A reflection journal that prompts and tracks weekly insights.
+Geekbot,Geekbot Support,support@geekbot.com,Slack bot,A Slack bot for daily standup check-ins.
+CrankWheel,CrankWheel Info,info@crankwheel.com,tab sharing tool,A browser tool that shares tabs instantly.
+CrankWheel,CrankWheel Support,support@crankwheel.com,tab sharing tool,A browser tool that shares tabs instantly.
+1Password,1Password Community Support,community@1password.com,secure vault,A secure vault for SSH key storage & autofill.
+Dashlane Business,Dashlane Support,support@dashlane.com,password vault,Centralized password vault with periodic auto-update support.
+Datadog,Datadog Support,help@datadoghq.com,performance monitor,A performance monitor with logs & alerts.
+DaisyDisk,DaisyDisk Privacy,privacy@daisydiskapp.com,disk usage visualizer,A visual map of disk usage with delete options.
+DaisyDisk,Software Ambience Corp.,swa@daisydiskapp.com,disk usage visualizer,A visual map of disk usage with delete options.
+GrandPerspective,GrandPerspective Career,people@grandperspective.de,disk analyzer,A simple pie-chart disk analyzer.
+GrandPerspective,GrandPerspective Press/Media,media@grandperspective.de,disk analyzer,A simple pie-chart disk analyzer.
+GrandPerspective,GrandPerspective Sales,scanfeld@grandperspective.de,disk analyzer,A simple pie-chart disk analyzer.
+Boostnote,IssueHunt inc.,info@boostnote.io,fast notepad,An untitled fast-launch notepad app.
+HashiCorp Vault,HashiCorp Security,security@hashicorp.com,secrets vault,A secrets vault with access logging and team permissions.
+1Password Teams,1Password Support,support@1password.com,password sharing tool,A secure password share tool that auto-revoke.
+Calendly,Calendly Support,support@calendly.com,scheduling calendar,A scheduling calendar that auto-suggests times across zones.
+Evernote Web Clipper,Evernote App Store,evernote.appstore@gmail.com,web clipper,A web clipper that saves articles to your notebook.
+GoodNotes 6,GoodNotes Support,support@goodnotes.com,handwriting note app,A handwriting note app with shape recognition & infinite canvas.
+Clockwise,Clockwise Financial Partners,clockwisefinancialpartners@ampf.com,meeting timer,An automatic meeting timer integrated with calendar.
+Easy Voice Recorder,SecurityPro USA Team,info@securityprousa.com,audio note app,A widget-based audio note app.
+Balsamiq,Balsamiq Support,support@balsamiq.com,UI wireframe tool,A quick sketching tool for UI wireframes with built-in components.
+Coolors,Coolors Info,info@coolors.co,color picker,A tool to pick colors from images and create palettes.
+Coolors,Coolors Support,help@coolors.co,color picker,A tool to pick colors from images and create palettes.
+Colormind,Atelier Simone à Bordeaux,atelier@simoneabordeaux.com,AI color generator,An AI color scheme generator for UI design.
+Boarder,BorderConnect Sales Department,sales@borderconnect.com,photo cleanup tool,A tool to clean up photos and digitize board drawings.
+IFTTT,IFTTT Email Service,trigger@applet.ifttt.com,API integration,An API integration that sends emails into task trackers.
+Justinmind,Justinmind Licensing Department,jim.sales@justinmind.com,mock tool,A quick mock tool with easy export to PNG/PDF.
+Circle Home Plus,Circle Media Inquiries,press@meetcircle.com,parental control app,A parental control app for monitoring and limiting screen use.
+Circle Home Plus,Circle Subscriptions Support,subscriptions@meetcircle.com,parental control app,A parental control app for monitoring and limiting screen use.
+Calm,Calm Support,support@calm.com,meditation app,A short guided meditation app for stress relief on the go.
+Anki,AnkiApp Support,support@ankiapp.com,study app,A study app that extracts questions/answers from imported PDFs.
+AnyList,AnyList Team,team@anylist.com,grocery app,A shared grocery app with sync and recipe imports.
+AllTrails,AllTrails Support,support@alltrails.com,trail planner,A trail planner with maps elevation and gear checklists.
+Brainscape,Brainscape Support,support@brainscape.com,flashcard app,A flashcard app that supports images and spaced repetition.
+Ancestry,Ancestry Member Services,memberservices@ancestrydna.com,genealogy app,A genealogy app to build family trees with photos & docs.
+Cronometer,Cronometer Sales,sales@cronometer.com,food log app,A food log app that lets you manually enter or search meals without scanning.
+CareClinic,CareClinic Sales,sales@careatc.com,health journal app,A health journal app for tracking symptoms triggers and medications.
+CareClinic,CareClinic Admin,admin@careclinicmd.com,health journal app,A health journal app for tracking symptoms triggers and medications.
+Colorcinch,Colorcinch Lead Department,team@colorcinch.com,image converter,An app that converts images to printable outlines for coloring.
+Decibel X,SKYPAW Support,support@skypaw.com,decibel meter,A decibel meter app that uses your mic to track sound levels.
+Daylio,Daylio Support,info@daylio.net,mood tracker,A mood tracker with journaling and graphs for patterns.
+HandBrake,HandBrake Support,info@handbrake.fr,video compressor,A video compressor with size optimization and format control.
+Clideo,Clideo Support,support@clideo.com,video compressor,A video compressor with size optimization and format control.
+Reflectly,Reflectly Support,hello@reflectly.app,wellness app,A wellness app centered around daily gratitude and reflections.
+Canva,Canva Sales,salessupport@canva.com,photo collage app,An app that creates grid or freestyle photo collages quickly.
+Canva,Canva Support,support@canva.com,photo collage app,An app that creates grid or freestyle photo collages quickly.
+Pic Collage,Pic Collage Support,support@piccollage.com,photo collage app,An app that creates grid or freestyle photo collages quickly.
+Modacity,Modacity Support,support@modacity.com,practice timer,A practice session timer with tracking for musicians.
+Soundbrenner,Soundbrenner Support,support@soundbrenner.com,practice timer,A practice session timer with tracking for musicians.
+Whering,Whering Support,hello@whering.co.uk,wardrobe planner,A wardrobe planner that catalogs clothes and creates outfits.
+Mindly,Mindly Support,support@mindlyapp.com,mind mapping tool,A mobile mind mapping tool for capturing thoughts and ideas.
+XMind,XMind Sales,sales@xmind.net,mind mapping tool,A mobile mind mapping tool for capturing thoughts and ideas.
+World Time Buddy,World Time Buddy Support,support@worldtimebuddy.com,timezone planner,A timezone planner with visual comparisons for scheduling.
+Tody,Tody Support,support@todyapp.com,home organizing app,"A home organizing app with tips, checklists, and progress tracking."
+Sortly,Sortly Sales,sales@sortly.com,home organizing app,"A home organizing app with tips, checklists, and progress tracking."
+Motionleap,Motionleap Support,support@motionleap.com,photo animation app,A photo animation app that brings images to life with motion effects.
+PixaMotion,PixaMotion Support,support@pixamotion.com,photo animation app,A photo animation app that brings images to life with motion effects.
+Cleaner Pro,Cleaner Pro Support,support@cleanerpro.com,contact cleanup app,A contact cleanup app that finds and merges duplicates.
+Contacts+,Contacts+ Support,support@contactsplus.com,contact cleanup app,A contact cleanup app that finds and merges duplicates.
+Goalscape,Goalscape Support,support@goalscape.com,productivity app,"A productivity app that lets you set, track, and visualize goals monthly."
+Strides,Strides Support,support@stridesapp.com,productivity app,"A productivity app that lets you set, track, and visualize goals monthly."
+Planta,Planta Support,support@planta.com,plant care app,A plant care app that reminds you when to water and feed plants.
+Vera,Vera Support,support@veraapp.com,plant care app,A plant care app that reminds you when to water and feed plants.
+Forest,Forest Support,support@forestapp.cc,distraction blocker,A distraction blocker that limits app usage during set hours.
+Freedom,Freedom Support,support@freedom.to,distraction blocker,A distraction blocker that limits app usage during set hours.
+Day One,Day One Support,support@dayoneapp.com,minimal journaling app,A minimal journaling app with daily prompts and cloud backup.
+Journey,Journey Support,support@journey.cloud,minimal journaling app,A minimal journaling app with daily prompts and cloud backup.
+Troveskin,Troveskin Support,support@troveskin.com,beauty tracker,"A beauty tracker for logging products, skin progress, and ingredients."
+Glowup,Glowup Support,support@glowupapp.com,beauty tracker,"A beauty tracker for logging products, skin progress, and ingredients."
+Squid,Squid Support,support@squidnotes.com,digital notebook,A digital notebook with handwriting recognition and pen support.
+Letterboxd,Letterboxd Support,support@letterboxd.com,movie logbook,"A movie logbook that lets you rate, tag, and review watched films."
+TV Time,TV Time Support,support@tvtime.com,movie logbook,"A movie logbook that lets you rate, tag, and review watched films."
+Lucid,Lucid Support,support@lucidapp.com,dream journal app,A dream journal app that lets you record audio or text notes.
+Dream Catcher Journal,Dream Catcher Journal Support,support@dreamcatcherjournal.com,dream journal app,A dream journal app that lets you record audio or text notes.
+MyTherapy,MyTherapy Support,support@mytherapyapp.com,symptom tracker,A symptom tracker with charts and medication log integration.
+Giftster,Giftster Support,support@giftster.com,wishlist organizer,A wishlist organizer that stores gift ideas per person or occasion.
+Wishsprout,Wishsprout Support,support@wishsprout.com,wishlist organizer,A wishlist organizer that stores gift ideas per person or occasion.
+Name Skillz,Name Skillz Support,support@nameskillz.com,memory training app,A memory training app with spaced repetition and name exercises.
+Flipp,Flipp Support,support@flipp.com,price comparison app,An app that compares grocery prices across stores near you.
+Basket,Basket Support,support@basketapp.com,price comparison app,An app that compares grocery prices across stores near you.
+Plant Nanny,Plant Nanny Support,support@plantnanny.com,hydration tracker,A hydration tracker that sends drink reminders and logs intake.
+WaterMinder,WaterMinder Support,support@waterminder.com,hydration tracker,A hydration tracker that sends drink reminders and logs intake.
+Bento,Bento Member Support,support@gobento.com,warranty tracker,An app that stores warranty info and sends expiry reminders.
+Bobby,FlavCity Support,support@flavcity.com,warranty tracker,An app that stores warranty info and sends expiry reminders.
+Bobby,BA Global Holdings,info@bobbyapproved.com,warranty tracker,An app that stores warranty info and sends expiry reminders.
+Acloset,Acloset Support,support@acloset.app,wardrobe planner,A wardrobe planner that catalogs clothes and creates outfits.
+Bearable,Bearable Support,support@bearable.app,symptom tracker,A symptom tracker with charts and medication log integration.
+Anki,AnkiHub Support,support@ankihub.net,memory training app,A memory training app with spaced repetition and name exercises.
+Anki,Anki Controller,info@ankiremote.com,memory training app,A memory training app with spaced repetition and name exercises.
+Basket,Basket Savings,hello@basketsavings.com,price comparison app,An app that compares grocery prices across stores near you.
+Basket,BasketNews Fantasy,info@basketnews.lt,price comparison app,An app that compares grocery prices across stores near you.
+Clue,Clue Sales,First@helloclue.com,period tracking app,A period tracking app with symptom logging and predictions.
+Meetup,Meetupcall Sales,support@meetupcall.com,local events app,An app that shows free and local happenings based on interests.
+Centriq,Centriq Studios Sales,centriqstudios@centriq.com,home checklist app,"A home checklist app for maintenance schedules, filters, and reminders."
+Key Ring,Key Ring Support,support@keyringapp.com,mobile wallet,A mobile wallet app that stores all loyalty cards digitally.
+IQAir AirVisual,IQAir Sales,FLast@iqair.com,air quality tracker,A real-time air quality tracker by zip code or GPS.
+Meme Generator,ZomboDroid Team,zombodroid@gmail.com,meme generator,"A meme generator with templates, stickers, and text overlays."
+ImgPlay,ImgPlay Contact,contact@imgplay.com,meme generator,"A meme generator with templates, stickers, and text overlays."
+Morse Mania,Morse Mania Support,suggestpaqe@163.com,morse trainer,"An interactive morse trainer with games, lessons, and practice modes."
+CleanSpeak,CleanSpeak Sales,sales@cleanspeak.com,speech analysis app,A speech analysis app that flags swearing and tracks usage.
+Hevy,Hevy Support,hello@hevyapp.com,fitness tracker,A fitness tracker with auto rep detection using motion sensors.
+CellarTracker,CellarTracker Support,support@cellartracker.com,wine journal app,"A wine journal app for logging taste, rating, and photos of bottles."
+Dream Journal Ultimate,Dream Labs LLC,team@dreamjournal.co,dream logging app,"A dream logging app with tags, mood, and recurring symbol tracking."
+FreePrints,FreePrints Privacy,privacy@pallcprivacy.com,mobile photo print service,A mobile photo print service with delivery or store pickup options.
+Board Game Geek,BoardGameGeek Store Contact,contact@boardgamegeekstore.com,collection manager for board games,"A collection manager for board games with ratings, stats, and wishlists."
+Board Game Geek,BoardGameGeek General Contact,contact@boardgamegeek.com,collection manager for board games,"A collection manager for board games with ratings, stats, and wishlists."
+Audible,Audible Press Relations,publicrelations@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Business Development,bizdev@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Bulk Purchases,grouporders@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Advertising/Marketing,marketing@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible International Content Partners,internationalpartner@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Current Content Partners (Royalties),royalties@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Current Content Partners (Other),partnerrelations@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Affiliates,affiliate@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Audible,Audible Book Requests,content-requests@audible.com,audiobook service,An audiobook service with a large catalog and offline listening.
+Huckleberry,Huckleberry Contact,hello@huckleberry-labs.com,newborn tracker,"A newborn tracker for logging feeding times, sleep, and diapers."
+Baby Tracker,Baby Tracker Info,info.baby.tracker@gmail.com,newborn tracker,"A newborn tracker for logging feeding times, sleep, and diapers."
+AllTrails,AllTrails Contact,First.Last@alltrails.com,trail finder app,"A trail finder app with user reviews, difficulty filters, and offline maps."
+Bobby,Bobby Dollar Appliances,bobby@bobbydollar.com,digital storage app,"A digital storage app for receipts, warranties, and product info."
+Dice,Dice Customer Support,help@dice.fm,local events app,A local events app that shows same-day happenings and ticket deals.
+GeoGuessr,GeoGuessr Subscription,subscription@geoguessr.com,geography quiz app,A geography quiz app that drills country-capital knowledge with maps.
+GeoGuessr,GeoGuessr Support,support@geoguessr.com,geography quiz app,A geography quiz app that drills country-capital knowledge with maps.
+GeoGuessr,GeoGuessr Data Privacy,data@geoguessr.com,geography quiz app,A geography quiz app that drills country-capital knowledge with maps.
+Elevate,Elevate Support,support@elevateapp.com,brain training app,A brain training app with timed math drills and tracking.
+Elevate,Elevate Privacy,privacy@elevateapp.com,brain training app,A brain training app with timed math drills and tracking.
+Moment,Moment Support,hello@moment.me,digital wellbeing app,A digital wellbeing app with detailed screen time breakdowns and alerts.
+Duet Display,Duet Display Support,team@duetdisplay.com,second monitor app,An app that lets you extend your desktop screen to a phone or tablet.
+Strides,Strides App Support,hello@stridesapp.com,personal goal-setting app,A personal goal-setting app with habit tracking and analytics.
+Coach.me,Coach.me Support,support@coach.me,personal goal-setting app,A personal goal-setting app with habit tracking and analytics.
+Kahoot!,Kahoot! Sales,sales@kahoot.com,interactive trivia app,An interactive trivia app that supports group play and custom quizzes.
+Quizizz,Quizizz Sales,sales@quizizz.com,interactive trivia app,An interactive trivia app that supports group play and custom quizzes.
+Lingvano,Lingvano Support,support@lingvano.com,sign language app,A sign language app with interactive lessons and video examples.
+Daily Yoga,Daily Yoga Support,support@dailyyoga.com,stretching routine app,"A stretching routine app with short, daily movement sessions."
+VolunteerMatch,VolunteerMatch Partnerships,partnerships@volunteermatch.org,volunteering network app,A volunteering network app that lists local causes and signups.
+Golden,Golden Support,support@goldenvolunteer.com,volunteering network app,A volunteering network app that lists local causes and signups.
+Centriq,Centriq Studios Sales,centriqstudios@centriq.com,document organizer,A document organizer for storing product manuals and guides.
+Sortly,Sortly Sales,sales@sortly.com,document organizer,A document organizer for storing product manuals and guides.
+Lichess,Lichess Support,contact@lichess.org,chess training app,"A chess training app with puzzles, lessons, and AI matches."
+Chess.com,Chess.com Sales,sales@chess.com,chess training app,"A chess training app with puzzles, lessons, and AI matches."
+Be Kind,Be Kind Movement Support,support@bekindmovement.org,social app,A social app that tracks and reminds you to complete good deeds.
+Good Deeds Day,Good Deeds Day Contact,contact@gooddeedsday.org,social app,A social app that tracks and reminds you to complete good deeds.
+Strong,Strong Support,support@strongapp.io,fitness app,A fitness app that tracks progress and generates visual trends over time.
+Speechify,Speechify Support,support@speechify.com,text-to-speech app,A text-to-speech app that reads websites aloud like podcasts.
+Pocket,Pocket Support,support@getpocket.com,text-to-speech app,A text-to-speech app that reads websites aloud like podcasts.
+Fabulous,Fabulous Sales,sales@thefabulous.co,habit and routine planner,A habit and routine planner that helps structure daily goals.
+Habitica,Habitica Support,admin@habitica.com,habit and routine planner,A habit and routine planner that helps structure daily goals.
+Medisafe,Medisafe Sales,sales@medisafe.com,medication tracker,A medication tracker that sends reminders and logs doses.
+MyTherapy,MyTherapy Support,support@mytherapyapp.com,medication tracker,A medication tracker that sends reminders and logs doses.
+Taste,Taste Support,support@taste.io,movie discovery tool,A movie discovery tool focused on hidden gems and curated lists.
+Reelgood,Reelgood Business Development,bizdev@reelgood.com,movie discovery tool,A movie discovery tool focused on hidden gems and curated lists.
+Everyday,Everyday Health Group,info@everydayhealthgroup.com,habit tracking app,"A habit tracking app with streaks, reminders, and goals."
+BringFido,BringFido Support,support@bringfido.com,dog park map app,"An app that maps dog parks, reviews, and pet-friendly spots."
+Upright GO,Upright GO Support,info@uprightpose.com,posture monitoring app,An app that monitors posture and gives real-time correction tips.
+RemNote,RemNote Sales,sales@remnote.com,note-to-flashcard converter,A note-to-flashcard converter with spaced repetition and quizzes.
+Quizlet,Quizlet Sales,sales@quizlet.com,note-to-flashcard converter,A note-to-flashcard converter with spaced repetition and quizzes.
+Yelp,Yelp Business Owners Support,support@yelp.com,local discovery app,A local discovery app that filters businesses by hours and location.
+AroundMe,AroundMe Support,support@aroundmeapp.com,local discovery app,A local discovery app that filters businesses by hours and location.
+Curiosity Stream,Curiosity Stream Support,help@curiositystream.com,trivia and learning app,A trivia and learning app that sends a new daily fact or concept.
+GasBuddy,GasBuddy Business Inquiries,sales@gasbuddy.com,gas price finder,An app that shows nearby gas prices and updates in real-time.
+Upside,Upside Sales,sales@upside.com,cashback app for gas,An app that shows nearby gas prices and updates in real-time.
+Rover,Rover Sales,sales@rover.com,pet activity tracker,"A pet activity tracker that logs walks, distance, and routes."
+Wag!,Wag! Sales,sales@wagwalking.com,pet activity tracker,"A pet activity tracker that logs walks, distance, and routes."
+Scanbot,Scanbot Support,support@scanbot.io,scanner app with OCR,A scanner app with OCR to convert books to searchable files.
+Pocket,Pocket Support,support@getpocket.com,discovery app for articles,A discovery app that curates interesting reads based on curiosity.
+Fitbod,Fitbod Support,support@fitbod.com,fitness app for home workouts,"A fitness app that logs sets, reps, and routines for home exercise."
+Calm,Calm Support,support@calm.com,mindfulness and breathing app,A mindfulness and breathing app for stress relief on the go.
+Life360,Life360 Sales,sales@life360.com,location history app,A location history app that maps your past trips and movements.
+TV Time,TV Time Support,support@tvtime.com,TV tracking app,"A TV tracking app for watchlists, episodes, and new releases."
+Notion,Notion Sales,sales@m-notion.com,digital notebook,A digital notebook for creative brainstorming and idea capture.
+Workflowy,Workflowy Support,help@workflowy.com,digital notebook,A digital notebook for creative brainstorming and idea capture.
+Word of the Day by SpanishDict,SpanishDict Support,support@spanishdict.com,language app,A language app with daily word-of-the-day notifications and context.
+Otter.ai,Otter.ai Sales,sales@otter.ai,voice note app,A voice note app with one-tap recording and cloud backup.
+Day One,Day One Support,support@dayoneapp.com,daily reflection app,A daily reflection app with writing prompts and streaks.
+Diaro,Diaro Support,support@diaroapp.com,daily reflection app,A daily reflection app with writing prompts and streaks.
+Daylio,Daylio Support,app.daylio@gmail.com,mood tracking journal,A mood tracking journal that ties emotions to specific actions.
+Moodflow,Moodflow Support,support@moodflowapp.com,mood tracking journal,A mood tracking journal that ties emotions to specific actions.
+ABBYY FineReader,ABBYY Sales,sales@abbyy.com,desktop OCR tool,A desktop OCR tool that extracts editable text from images.
+Mealime,Mealime Support,support@mealime.com,meal planner,A meal planner that auto-generates grocery lists from recipes.
+Whisk,Whisk Support,help@whisk.com,meal planner,A meal planner that auto-generates grocery lists from recipes.
+Toggl Track,Toggl Track Sales,sales@toggltoggl.com,freelancer time tracker,A freelancer time tracker that tags entries by project or client.
+Harvest,Harvest Sales,sales@getharvest.com,freelancer time tracker,A freelancer time tracker that tags entries by project or client.
+MealPrepPro,MealPrepPro Support,support@mealpreppro.com,weekly meal planner,"A weekly meal planner with recipes, grocery lists, and prep schedules."
+Plan to Eat,Plan to Eat Support,support@plantoeat.com,weekly meal planner,"A weekly meal planner with recipes, grocery lists, and prep schedules."
+WaterMinder,WaterMinder Support,info@waterminder.com,hydration tracker,A hydration tracker that reminds and logs your daily water intake.
+Drivvo,Drivvo Support,support@drivvo.com,vehicle log app,"A vehicle log app for tracking fuel, maintenance, and repairs."
+Fuelly,Fuelly Support,support@fuelly.com,vehicle log app,"A vehicle log app for tracking fuel, maintenance, and repairs."
+Yousician,Yousician Sales,sales@yousician.com,ukulele lesson app,"A ukulele lesson app with tutorials, chord diagrams, and practice tools."
+JustinGuitar,JustinGuitar Support,support@justinguitar.com,ukulele lesson app,"A ukulele lesson app with tutorials, chord diagrams, and practice tools."
+Planta,Planta Support,contact@planta.app,plant care app,A plant care app with watering reminders and custom schedules.
+Vera,Vera Support,support@vera.com,plant care app,A plant care app with watering reminders and custom schedules.
+Headspace,Headspace Sales,sales@headspace.com,guided meditation app,A guided meditation app for beginners with daily exercises.
+Balance,Balance Support,support@balanceapp.com,guided meditation app,A guided meditation app for beginners with daily exercises.
+Stocard,Stocard Sales,sales@stocard.com,digital wallet for loyalty cards,A digital wallet for storing all loyalty and membership cards.
+Key Ring,Key Ring Support,support@keyringapp.com,digital wallet for loyalty cards,A digital wallet for storing all loyalty and membership cards.
+Giftster,Giftster Support,support@giftster.com,wishlist organizer,A wishlist organizer for saving gift ideas by person or event.
+Raindrop.io,Raindrop.io Support,support@raindrop.io,smart bookmark manager,"A smart bookmark manager with tags, folders, and search."
+Pocket,Pocket Support,support@getpocket.com,smart bookmark manager,"A smart bookmark manager with tags, folders, and search."
+Forest,Forest Support,support@forestapp.cc,focus app,A focus app that blocks distractions and tracks screen time.
+Freedom,Freedom Sales,sales@freedom.to,focus app,A focus app that blocks distractions and tracks screen time.
+Unfold,Unfold Business Inquiries,business@unfold.com,design app for stories,"A design app with story templates, animations, and effects."
+Mojo,Mojo Support,support@mojo.video,design app for stories,"A design app with story templates, animations, and effects."
+Bearable,Bearable Support,support@bearable.app,self-tracking journal,"A self-tracking journal for logging mood, energy, and symptoms."
+Daylio,Daylio Support,app.daylio@gmail.com,self-tracking journal,"A self-tracking journal for logging mood, energy, and symptoms."
+OurGroceries,OurGroceries Support,support@ourgroceries.com,minimalist grocery list app,A minimalist list app that sorts groceries and syncs across devices.
+Bring,Bring Support,contact@getbring.com,minimalist grocery list app,A minimalist list app that sorts groceries and syncs across devices.
+TypingClub,TypingClub Sales,sales@typingclub.com,typing tutor app,A typing tutor app with structured lessons and speed tests.
+TickTick,TickTick Support,support@ticktick.com,task manager,A task manager with recurring daily resets and checklist features.
+Vivino,Vivino Sales,sales@vivino.com,wine logbook app,"A wine logbook app to track tastings, ratings, and labels."
+Delectable,Delectable Support,support@delectable.com,wine logbook app,"A wine logbook app to track tastings, ratings, and labels."
+Day One,Day One Support,support@dayoneapp.com,journal that accepts voice recordings,A journal that accepts voice recordings and transcribes them.
+Penzu,Penzu Support,support@penzu.com,journal that accepts voice recordings,A journal that accepts voice recordings and transcribes them.
+Canva,Canva Sales,sales@canva.com,graphic design app,A graphic design app with templates for quotes and posts.
+Typorama,Typorama Support,support@typorama.com,graphic design app,A graphic design app with templates for quotes and posts.
+CareClinic,CareClinic Sales,sales@careatc.com,health journal,"A health journal for tracking symptoms, triggers, and meds."
+Tody,Tody Support,support@todyapp.com,cleaning checklist app,A cleaning checklist app that auto-rotates tasks and sets reminders.
+Sweepy,Sweepy Support,support@sweepy.com,cleaning checklist app,A cleaning checklist app that auto-rotates tasks and sets reminders.
+Noted,Noted Support,support@notedapp.co,voice memo app,A voice memo app with quick capture and cloud sync.
+Just Press Record,Just Press Record Support,support@justpressrecordapp.com,voice memo app,A voice memo app with quick capture and cloud sync.
+Dream Catcher,Dream Catcher Support,support@dreamcatcherapp.com,dream log,"A dream log with search, tags, and voice entry features."
+Lucidity,Lucidity Support,support@lucidity.me,dream log,"A dream log with search, tags, and voice entry features."
+Simplenote,Simplenote Support,support@simplenote.com,minimalist note app,"A minimalist note app with quick entry, sync, and markdown support."
+Jasper,Jasper Customer Support,hey@jasper.ai,AI content generator,An AI content generator for long-form writing like blogs and articles.
+ElevenLabs,ElevenLabs Support,team@elevenlabs.io,AI voice tool,An AI voice tool that converts text to humanlike speech.
+Gamma,Gamma Sales,sales@gammanet.com,AI-powered presentation maker,An AI-powered presentation maker from outlines or bullet points.
+Geekbot,Geekbot Sales,sales@geekbot.io,AI bot for standup summaries,An AI bot that summarizes team chats and standups into concise updates.
+HeyGen,HeyGen Enterprise Inquiries,Leads@HeyGen.com,AI avatar generator,An AI avatar generator that syncs lip movement to voice and creates lifelike faces.
+Clockwise,Clockwise Sales,sales@mystore.com,smart calendar assistant (placeholder email for sales inquiries),A smart calendar assistant that books meetings and finds the best time slots.
+BookBildr,BookBildr Support,help@bookbildr.com,storytelling AI,A storytelling AI that writes and illustrates children’s books from prompts.
+GPTExcel,GPTExcel Support,contact@gptexcel.uk,AI spreadsheet assistant,"An AI spreadsheet assistant that detects errors, formats data, and explains formulas."
+AgentGPT,AgentGPT Support,support@reworkd.ai,screen context AI,A screen context AI that gives real-time explanations and tips based on what you’re doing.
+Jasper,Jasper Sales,hey@jasper.ai,AI content generator,An AI content generator for long-form writing like blogs and articles.
+Copy.ai,Copy.ai Sales,sales@copy.ai,AI content generator,An AI content generator for long-form writing like blogs and articles.
+ElevenLabs,ElevenLabs Support,team@elevenlabs.io,AI voice tool,An AI voice tool that converts text to humanlike speech.
+Play.ht,Play.ht Sales,sales@play.ht,AI voice tool,An AI voice tool that converts text to humanlike speech.
+Pictory,Pictory Sales,sales@pictory.ai,AI video editor,"An AI video editor that cuts silences, adds captions, and enhances audio automatically."
+Gamma,Gamma Sales,sales@gammanet.com,AI-powered presentation maker,An AI-powered presentation maker from outlines or bullet points.
+Ellie.ai,Ellie.ai Sales,sales@ellie.ai,voice analysis app,"A voice analysis app that detects tone, confidence, and energy."
+Kickresume AI,Kickresume Support,hello@kickresume.com,AI resume analyzer,An AI resume analyzer that offers improvements and scoring.
+Geekbot,Geekbot Sales,sales@geekbot.io,AI bot for standup summaries,An AI bot that summarizes team chats and standups into concise updates.
+HeyGen,HeyGen Enterprise Inquiries,Leads@HeyGen.com,AI avatar generator,An AI avatar generator that syncs lip movement to voice and creates lifelike faces.
+BookBildr,BookBildr Support,help@bookbildr.com,storytelling AI,A storytelling AI that writes and illustrates children’s books from prompts.
+GPTExcel,GPTExcel Contact,contact@gptexcel.uk,AI spreadsheet assistant,"An AI spreadsheet assistant that detects errors, formats data, and explains formulas."
+AgentGPT,AgentGPT Support,support@reworkd.ai,screen context AI,A screen context AI that gives real-time explanations and tips based on what you’re doing.
+Freedom,Freedom Sales,sales@freedom.to,productivity app for blocking websites,A productivity app that blocks specific websites and apps during focus sessions.
+Cold Turkey,Cold Turkey Support,support@getcoldturkey.com,productivity app for blocking websites,A productivity app that blocks specific websites and apps during focus sessions.
+Splitwise,Splitwise Support,support@splitwise.com,expense-sharing app,An expense-sharing app that tracks who owes what and sends reminders.
+Settle Up,Settle Up Support,support@settleup.info,expense-sharing app,An expense-sharing app that tracks who owes what and sends reminders.
+Skiplagged,Skiplagged Support,support@skiplagged.com,flight deal app,A flight deal app for spontaneous trips and last-minute bookings.
+Any.do,Any.do Sales,sales@any.do,shared to-do list app,A shared to-do list app for couples with reminders and sync features.
+Notion,Notion Sales,sales@m-notion.com,template creator,"A template creator with modular elements for planners, journals, and calendars."
+The Dyrt,The Dyrt Sales,sales@thedyrt.com,outdoor app for camping,"An outdoor app with user-submitted camping locations, photos, and reviews."
+Paprika,Paprika Support,support@paprikaapp.com,recipe organizer,"A recipe organizer that stores web recipes, custom entries, and meal plans."
+Whisk,Whisk Support,help@whisk.com,recipe organizer,"A recipe organizer that stores web recipes, custom entries, and meal plans."
+Qustodio,Qustodio Sales,sales@qustodio.com,parental control app,A parental control app that schedules and limits screen time per app or device.
+OurPact,OurPact Sales,sales@ourpact.com,parental control app,A parental control app that schedules and limits screen time per app or device.
+Clue,Clue Sales,First@helloclue.com,health tracker for cycles,"A health tracker for cycles, ovulation, mood, and physical symptoms."
+Flo,Flo Sales,sales@flo.health,health tracker for cycles,"A health tracker for cycles, ovulation, mood, and physical symptoms."
+Roadtrippers,Roadtrippers Sales,sales@roadtrippers.com,travel planner for road trips,"A travel planner for road trips with attractions, stops, and routes."
+Discogs,Discogs Sales,sales@discogs.com,music discovery app,A discovery-focused music app that suggests similar and trending artists.
+Interviewing.io,Interviewing.io Sales,sales@interviewing.io,interview prep app,"An interview prep app with sample questions, tips, and mock interview features."
+World Time Buddy,World Time Buddy Support,info@worldtimebuddy.com,time zone converter,"A time zone converter for meetings, travel, and scheduling."
+Hiya,Hiya Sales,sales@hiya.com,call blocker app,A call blocker app that filters spam numbers and robocalls.
+Truecaller,Truecaller Business Inquiries,businessinquiries@truecaller.com,call blocker app,A call blocker app that filters spam numbers and robocalls.
+Smart Closet,Smart Closet Support,contact@smartcloset.app,digital closet app,"A digital closet app to catalog, plan outfits, and track wears."
+AdGuard,AdGuard Sales,sales@adguard.com,browser extension for ads,A browser extension or app that blocks YouTube ads and pop-ups.
+MediSafe,MediSafe Sales,sales@medisafe.com,med tracking app for parents,"A med tracking app with schedules, dosage logging, and caregiver alerts."
+CCleaner,CCleaner Sales,sales@ccleaner.com,disk cleanup utility,A disk cleanup utility that finds and removes temporary and unused files.
+CleanMyMac,CleanMyMac Sales,sales@macpaw.com,disk cleanup utility,A disk cleanup utility that finds and removes temporary and unused files.
+Elevate,Elevate Sales,sales@elevateapp.com,brain training app,"A brain training app that focuses on math speed, accuracy, and memory."
+PlantSnap,PlantSnap Support,support@plantsnap.com,plant ID app,A plant ID app that uses your phone camera to recognize species and give care tips.
+PictureThis,PictureThis Sales,business@picturethisai.com,plant ID app,A plant ID app that uses your phone camera to recognize species and give care tips.
+Photomyne,Photomyne Support,support@photomyne.com,mobile scanner app for photos,A mobile scanner app optimized for digitizing printed photos and organizing them.
+Board Game Geek,Board Game Geek Sales,sales@boardgamegeek.com,collection manager for board games,"A collection manager app made for tracking board games, ratings, and expansions."
+Buffer,Buffer Sales,sales@buffer.com,social media scheduling tool,A social media scheduling tool that plans posts across platforms with analytics.
+Later,Later Sales,sales@later.com,social media scheduling tool,A social media scheduling tool that plans posts across platforms with analytics.
+Paprika,Paprika Support,support@paprikaapp.com,recipe manager,A recipe manager that lets you scale ingredients based on servings.
+Whisk,Whisk Support,help@whisk.com,recipe manager,A recipe manager that lets you scale ingredients based on servings.
+Daylio,Daylio Support,app.daylio@gmail.com,simple journaling app,A simple journaling app with prompts and mood tracking.
+Reflectly,Reflectly Sales,sales@reflectly.app,simple journaling app,A simple journaling app with prompts and mood tracking.
+The StoryGraph,The StoryGraph Support,support@storygraph.com,reading tracker,"A reading tracker that logs books, progress, and wishlists."
+Otter,Otter.ai Sales,sales@otter.ai,voice recording app,A voice recording app optimized for speech clarity and long sessions.
+Noted,Noted Support,support@notedapp.co,voice recording app,A voice recording app optimized for speech clarity and long sessions.
+Strides,Strides Support,hello@stridesapp.com,fitness tracker,"A fitness tracker with goal setting, streaks, and workout logs."
+Honeydue,Honeydue Support,support@honeydue.com,shared budgeting app,"A shared budgeting app that syncs income, expenses, and goals."
+Zeta,Zeta Support,support@askzeta.com,shared budgeting app,"A shared budgeting app that syncs income, expenses, and goals."
+Eventbrite,Eventbrite Sales,sales@eventbrite.com,discovery platform for events,"A discovery platform for events, popups, and activities near you."
+Raindrop.io,Raindrop.io Support,support@raindrop.io,cross-platform bookmark manager,"A cross-platform bookmark manager with tagging, folders, and search."
+RescueTime,RescueTime Sales,sales@rescuetime.com,productivity tracker for screen time,A productivity tracker that logs screen time and app usage on desktop.
+ThinkUp,ThinkUp Support,support@thinkup.me,wellness app for affirmations,A wellness app that sends daily affirmations with custom themes.
+Concepts,Concepts Support,support@concepts.app,mobile drawing app,A mobile drawing app for note-sketching and idea visuals.
+SMS Backup & Restore,SMS Backup & Restore Support,support@sms-backup-restore.com,Android app for SMS backup,"An Android app that creates backups of SMS, MMS, and call logs."
+Fender Play,Fender Play Sales,play@fender.com,self-learning app for guitar,"A self-learning app with guitar lessons, chord libraries, and tuner."
+Yousician,Yousician Sales,sales@yousician.com,self-learning app for guitar,"A self-learning app with guitar lessons, chord libraries, and tuner."
+Sense,Sense Sales,sales@sense.com,smart energy monitor,A smart energy monitor that tracks and reports electricity usage by device.
+Emporia Energy,Emporia Energy Sales,sales@emporiaenergy.com,smart energy monitor,A smart energy monitor that tracks and reports electricity usage by device.
+AllTrails,AllTrails Sales,sales@alltrails.com,trail discovery app,"A trail discovery app with maps, reviews, and offline support."
+Gaia GPS,Gaia GPS Sales,sales@gaiagps.com,trail discovery app,"A trail discovery app with maps, reviews, and offline support."
+Fridge Pal,Fridge Pal Support,support@fridgepal.app,kitchen inventory app,A kitchen inventory app with expiration tracking and waste reduction reminders.
+Looka,Looka Support,support@looka.com,AI-powered logo generator,An AI-powered logo generator that creates brand visuals from a few prompts.
+SheetAI,SheetAI Support,support@sheetai.app,AI data visualization tool,An AI data visualization tool that converts raw tables into interactive graphs.
+Grammarly,Grammarly Sales,sales@grammarly.com,AI writing assistant,"An AI writing assistant that highlights tone, clarity, and wordiness in your text."
+ProWritingAid,ProWritingAid Sales,sales@prowritingaid.com,AI writing assistant,"An AI writing assistant that highlights tone, clarity, and wordiness in your text."
+Botium,Botium Sales,sales@botium.ai,Chatbot simulation tool,A chatbot simulation tool powered by AI that mimics customer interactions.
+Durable,Durable Sales,sales@durable.co,AI website builder,An AI website builder that auto-generates full pages including copy and layout.
+Mixo,Mixo Support,support@mixo.io,AI website builder,An AI website builder that auto-generates full pages including copy and layout.
+Pictory,Pictory Sales,sales@pictory.ai,AI transcription and repurposing tool,An AI transcription and repurposing tool that rewrites video content into blog format.
+Castmagic,Castmagic Support,support@castmagic.io,AI transcription and repurposing tool,An AI transcription and repurposing tool that rewrites video content into blog format.
+Huetone,Huetone Contact,hello@huetone.ai,AI design assistant for color palettes,An AI design assistant that suggests harmonious color schemes based on branding or mood.
+Turnitin Revision Assistant,Turnitin Sales,ti_sales@turnitin.com,AI grading assistant,An AI grading assistant that scores essays and provides structured feedback.
+Thematic,Thematic Sales,sales@thematic.com,NLP tool for customer feedback,An NLP tool that uses AI to tag and summarize customer sentiment at scale.
+MonkeyLearn,MonkeyLearn Sales,sales@monkeylearn.com,NLP tool for customer feedback,An NLP tool that uses AI to tag and summarize customer sentiment at scale.
+Fireflies,Fireflies Sales,sales@fireflies.ai,AI meeting tool,"An AI meeting tool that records, transcribes, and summarizes calls from Zoom or Google Meet."
+Otter.ai,Otter.ai Sales,sales@otter.ai,AI meeting tool,"An AI meeting tool that records, transcribes, and summarizes calls from Zoom or Google Meet."
+Tweet Hunter,Tweet Hunter Support,support@tweethunter.io,Content AI for social posts,A content AI that uses real-time news APIs to generate social posts.
+Jasper,Jasper Customer Support,hey@jasper.ai,Content AI for social posts,A content AI that uses real-time news APIs to generate social posts.
+StoryboardHero,StoryboardHero Support,support@storyboardhero.ai,AI visual storytelling tool,An AI visual storytelling tool that turns scripts or prompts into storyboards.
+Boords,Boords Sales,sales@boords.com,AI visual storytelling tool,An AI visual storytelling tool that turns scripts or prompts into storyboards.
+Linguix,Linguix Sales,sales@linguix.com,AI email tone checker,An AI email tone checker that highlights negative phrasing and suggests softer alternatives.
+Mockey,Mockey Support,support@mockey.ai,AI design tool for product mockups,A design AI that generates realistic product mockups from flat images or prompts.
+Phind,Phind Support,support@phind.com,AI coding assistant,An AI coding assistant that generates technical Q&A style answers with references.
+Play.ht,Play.ht Sales,sales@play.ht,AI voice tool,An AI voice tool that converts written articles into podcast-style narration.
+Podcastle,Podcastle Sales,sales@podcastle.ai,AI voice tool,An AI voice tool that converts written articles into podcast-style narration.
+Moodflow,Moodflow Support,support@moodflowapp.com,AI-powered mood tracking journal,An AI-powered mood tracking journal that learns your patterns and predicts emotional states.
+Instantly,Instantly Sales,sales@instantly.ai,cold email outreach tool,A cold email outreach tool with personalization tokens and analytics.
+Smartlead,Smartlead Sales,sales@smartlead.ai,cold email outreach tool,A cold email outreach tool with personalization tokens and analytics.
+CakeResume,CakeResume Support,support@cakeresume.com,resume builder for interactive resumes,"A resume builder that supports rich media, links, and interactive portfolios."
+VisualCV,VisualCV Support,support@visualcv.com,resume builder for interactive resumes,"A resume builder that supports rich media, links, and interactive portfolios."
+Cara Care,Cara Care Sales,info@cara.care,food diary app for intolerances,A food diary app that logs meals and tracks symptoms to find intolerances.
+MySymptoms,MySymptoms Support,support@mysymptoms.net,food diary app for intolerances,A food diary app that logs meals and tracks symptoms to find intolerances.
+Maze,Maze Sales,sales@maze.co,usability testing platform,A usability testing platform for getting remote feedback from real users.
+Useberry,Useberry Sales,sales@useberry.com,usability testing platform,A usability testing platform for getting remote feedback from real users.
+Tidio,Tidio Sales,sales@tidio.com,AI helpdesk assistant,An AI helpdesk assistant that drafts responses to support tickets.
+Yuma AI,Yuma AI Sales,sales@yuma.ai,AI helpdesk assistant,An AI helpdesk assistant that drafts responses to support tickets.
+Homey,Homey Support,hello@homey.app,family chore tracker,A family chore tracker with gamified rewards for kids.
+OurHome,OurHome Support,support@ourhomeapp.com,family chore tracker,A family chore tracker with gamified rewards for kids.
+Sunsama,Sunsama Sales,sales@sunsama.com,calendar app for aesthetics,"A calendar app with themes, aesthetic views, and social sync."
+Rise Calendar,Rise Calendar Support,support@rise.ai,calendar app for aesthetics,"A calendar app with themes, aesthetic views, and social sync."
+Loom,Loom Sales,sales@loom.com,screen recorder with webcam,A screen recorder that supports split-view webcam and screen capture.
+Tella,Tella Support,support@tella.tv,screen recorder with webcam,A screen recorder that supports split-view webcam and screen capture.
+Partiful,Partiful Support,hello@partiful.com,event invite tool without email,An event invite tool with SMS links and branded web RSVP pages.
+Greenvelope,Greenvelope Sales,sales@greenvelope.com,event invite tool without email,An event invite tool with SMS links and branded web RSVP pages.
+Bravo Studio,Bravo Studio Sales,sales@bravostudio.app,no-code design platform for prototypes,A no-code design platform to prototype mobile apps and flows.
+Proto.io,Proto.io Sales,sales@proto.io,no-code design platform for prototypes,A no-code design platform to prototype mobile apps and flows.
+Snagit,Snagit Sales,sales@techsmith.com,screenshot manager,A screenshot manager that auto-tags and organizes screen captures by app or type.
+Gumroad,Gumroad Sales,support@gumroad.com,marketplace platform for digital templates,A marketplace platform for selling digital goods like templates and downloads.
+Lemon Squeezy,Lemon Squeezy Sales,sales@lemonsqueezy.com,marketplace platform for digital templates,A marketplace platform for selling digital goods like templates and downloads.
+UptimeRobot,UptimeRobot Sales,sales@uptimerobot.com,monitoring tool for website uptime,A monitoring tool that checks site status and sends instant alerts.
+BetterStack,BetterStack Sales,sales@betterstack.com,monitoring tool for website uptime,A monitoring tool that checks site status and sends instant alerts.
+Castmagic,Castmagic Support,support@castmagic.io,AI tool for podcast episode titles,An AI tool that analyzes podcast transcripts to suggest catchy titles.
+Canva,Canva Sales,sales@canva.com,visual goal-setting app for vision boards,A visual goal-setting app for creating and sharing digital vision boards.
+Zoho Invoice,Zoho Invoice Sales,sales@zohocorp.com,invoicing platform for branded templates,An invoicing platform that lets you design branded and reusable invoice templates.
+PlanMoreTrips,PlanMoreTrips Support,support@planmoretrips.com,travel planning app for packing lists,A travel planning app that generates packing lists based on trip type and weather.
+Smaply,Smaply Sales,sales@smaply.com,customer experience platform for journey mapping,A customer experience platform for mapping out user journeys and touchpoints.
+UXPressia,UXPressia Sales,sales@uxpressia.com,customer experience platform for journey mapping,A customer experience platform for mapping out user journeys and touchpoints.
+uMark,uMark Sales,sales@umark.net,batch photo editor that adds watermarks,A batch photo editor that adds watermarks and exports images for publishing.
+PhotoBulk,PhotoBulk Sales,sales@macpaw.com,batch photo editor that adds watermarks,A batch photo editor that adds watermarks and exports images for publishing.
+ReadMe,ReadMe Sales,sales@readme.io,developer documentation platform,A developer documentation platform with live code snippets and versioning.
+Stoplight,Stoplight Sales,sales@stoplight.io,developer documentation platform,A developer documentation platform with live code snippets and versioning.
+Beaconstac,Beaconstac Sales,sales@beaconstac.com,dynamic QR code generator,A dynamic QR code generator that supports bulk creation and tracking.
+Stark,Stark Sales,sales@stark.ai,tool that checks color contrast for accessibility,A tool that checks color contrast ratios for WCAG compliance and accessibility.
+Kapwing,Kapwing Sales,sales@kapwing.com,video editor for subtitles,A video editor that auto-generates and styles subtitles from audio.
+Subly,Subly Sales,sales@subly.ai,video editor for subtitles,A video editor that auto-generates and styles subtitles from audio.
+Knowt,Knowt Support,support@knowt.com,AI study tool for flashcards,An AI study tool that creates flashcards from documents and PDFs.
+Quizlet AI,Quizlet Sales,sales@quizlet.com,AI study tool for flashcards,An AI study tool that creates flashcards from documents and PDFs.
+TV Time,TV Time Support,support@tvtime.com,media tracking app for TV shows,"A media tracking app that lets you follow TV shows, log episodes, and discover what to watch next."
+Recipe Keeper,Recipe Keeper Support,support@recipekeeper.com,scanner and recipe organizer,A scanner and recipe organizer that converts handwritten or printed recipes into digital format.
+Paprika,Paprika Support,support@paprikaapp.com,scanner and recipe organizer,A scanner and recipe organizer that converts handwritten or printed recipes into digital format.
+Canva,Canva Sales,sales@canva.com,visual design platform for mood boards,A visual design platform made for creating and sharing mood boards.
+InShot,InShot Support,inshot.android@gmail.com,mobile video editor for music,A mobile video editor with royalty-free music and social integrations.
+Thunkable,Thunkable Sales,sales@thunkable.com,no-code app builder,A no-code app builder that lets you create native apps using drag-and-drop blocks.
+Adalo,Adalo Sales,sales@adalo.com,no-code app builder,A no-code app builder that lets you create native apps using drag-and-drop blocks.
+Pictory,Pictory Sales,sales@pictory.ai,AI repurposing tool for videos,An AI repurposing tool that converts blog content into short video scripts with visuals.
+Lumen5,Lumen5 Sales,sales@lumen5.com,AI repurposing tool for videos,An AI repurposing tool that converts blog content into short video scripts with visuals.
+StoryGraph,StoryGraph Support,support@storygraph.com,book tracking app,"A book tracking app with barcode scanning, reviews, and reading goals."
+Keepy,Keepy Support,support@keepy.com,app for organizing kids' art projects,An app that lets you photograph and archive children's artwork into digital galleries.
+Artkive,Artkive Support,support@artkiveapp.com,app for organizing kids' art projects,An app that lets you photograph and archive children's artwork into digital galleries.
+Hootsuite,Hootsuite Sales,sales@hootsuite.com,social media dashboard,"A social media dashboard that helps manage, schedule, and report across platforms."
+Buffer,Buffer Sales,sales@buffer.com,social media dashboard,"A social media dashboard that helps manage, schedule, and report across platforms."
+RoomScan Pro,RoomScan Pro Support,support@locometric.com,AR measurement app for room dimensions,An AR measurement app that lets you scan and measure spaces with your phone camera.
+Writer,Writer Sales,sales@writer.com,AI content optimizer for website copy,"An AI content optimizer that improves readability, clarity, and tone for web UX."
+Jasper,Jasper Customer Support,hey@jasper.ai,AI content optimizer for website copy,"An AI content optimizer that improves readability, clarity, and tone for web UX."
+Smart Closet,Smart Closet Support,contact@smartcloset.app,smart packing planner,"A smart packing planner that factors in weather, activities, and outfits."
+Hevy,Hevy Support,support@hevy.com,fitness planner for workout routines,A fitness planner that helps you create and schedule workouts with video demos.
+Jefit,Jefit Sales,sales@jefit.com,fitness planner for workout routines,A fitness planner that helps you create and schedule workouts with video demos.
+Circle,Circle Sales,sales@circle.so,community platform for paid communities,A community platform that supports paid memberships and private content.
+Mighty Networks,Mighty Networks Sales,sales@mightynetworks.com,community platform for paid communities,A community platform that supports paid memberships and private content.
+Copysmith,Copysmith Sales,sales@copysmith.ai,AI content writer for product descriptions,An AI content writer built to optimize product listings for search and engagement.
+Describely,Describely Sales,sales@describely.com,AI content writer for product descriptions,An AI content writer built to optimize product listings for search and engagement.
+AnyList,AnyList Support,support@anylist.com,shared grocery app,A shared grocery app that syncs in real time and supports categories.
+Bring,Bring Support,info@getbring.com,shared grocery app,A shared grocery app that syncs in real time and supports categories.
+WaterMinder,WaterMinder Support,support@waterminder.com,hydration tracker,"A hydration tracker with reminders, goals, and daily insights."
+Whering,Whering Support,support@whering.co,digital closet and outfit tracker,A digital closet and outfit tracker that logs your most-used clothes.
+Potion,Potion Sales,hello@potion.so,platform that turns Notion documents into websites,A platform that turns Notion documents into fully responsive websites with custom domains.
+Super.so,Super.so Sales,hello@super.so,platform that turns Notion documents into websites,A platform that turns Notion documents into fully responsive websites with custom domains.
+Orai,Orai Sales,sales@orai.com,virtual stage platform for public speaking,A virtual stage platform that helps you practice presentations and receive peer or AI feedback.
+Canva,Canva Sales,sales@canva.com,drag-and-drop label maker,A drag-and-drop label maker with export options for product packaging.
+Supermeme.ai,Supermeme.ai Support,support@supermeme.ai,AI writing tool for jokes,An AI writing tool that generates topical jokes and comedic tweets.
+Flockstar,Flockstar Support,support@flockstar.app,homesteading tool for egg tracking,A homesteading tool that logs egg production and bird health records.
+Streaks,Streaks Support,support@streaksapp.com,wellness tracker with cold shower timer,A wellness tracker with a built-in cold shower timer and streaks.
+Clearbrief,Clearbrief Sales,sales@clearbrief.com,AI legal tool for plain English legalese,An AI legal tool that translates legal language to plain English and vice versa.
+djay Pro,djay Pro Support,support@algoriddim.com,DJ app for practicing transitions,A DJ app with virtual decks and looping for practicing smooth transitions.
+Money Manager,Money Manager Support,support@realbyteapps.com,personal finance app with offline functionality,A personal finance app with full offline functionality for transactions and budget categories.
+Wallet by BudgetBakers,Wallet by BudgetBakers Sales,sales@budgetbakers.com,personal finance app with offline functionality,A personal finance app with full offline functionality for transactions and budget categories.
+HabitNow,HabitNow Support,support@habitnow.app,habit tracker for barefoot steps,A habit tracker or step counter that can log barefoot vs. shoe-based steps via tagging.
+Pacer,Pacer Sales,sales@mypacer.com,habit tracker for barefoot steps,A habit tracker or step counter that can log barefoot vs. shoe-based steps via tagging.
+AIVA,AIVA Sales,sales@aiva.ai,experimental AI composition app for dreams,An experimental AI composition app that turns descriptions or moods into generated music.
+Bingo Baker,Bingo Baker Sales,sales@bingobaker.com,printable bingo card generator,A printable bingo card generator with custom themes and multiplayer mode.
+Day One,Day One Support,support@dayoneapp.com,journal app with voice notes,"A journal app that supports voice entry, transcription, and mood tagging."
+Journal it!,Journal it! Support,support@journalitapp.com,journal app with voice notes,"A journal app that supports voice entry, transcription, and mood tagging."
+Shortform,Shortform Support,hello@shortform.com,AI book summary tool,An AI book summary tool that digests scanned or uploaded books into summaries.
+SpeakPipe,SpeakPipe Support,support@speakpipe.com,voice recording and sharing app for anonymous messages,A voice recording and sharing app that allows anonymous submissions via links.
+VoxTools,VoxTools Support,support@voxtools.net,vocal training app for whistling,A vocal training app that includes guides and exercises for learning to whistle.
+Lucidity,Lucidity Support,support@lucidity.app,dream journaling app,A dream journaling app that tags themes and gives pattern insights.
+Pally, Pally Team, hello@pally.com, relationship managment platform, A relationshiph managment platform
+
+
+
