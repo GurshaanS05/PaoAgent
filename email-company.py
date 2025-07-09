@@ -69,7 +69,7 @@ One of our most popular requests is "{short_desc}", so we know that {company_nam
 
 You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
 
-If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing
+If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing. We'd love to offer you a discount of 10%% on your first promotion with discount code TOOL10!
 
 If anything above interests you, please feel free to respond to this email (or book a time on calendly), and we can set up a time to chat.
 
@@ -78,6 +78,7 @@ Looking forward to hearing from you!
 Best,
 
 Sachin @ Toolforthat.io
+https://calendly.com/sachin-toolforthat
 
 
 --If you want to stop receiving these emails, please reply with "STOP" in the subject line.
