@@ -62,7 +62,7 @@ def read_text_file(file_path, description=""):
 
 # Fixed marketing template (with placeholder for product description sentence)
 MARKETING_TEMPLATE = '''
-TL;DR: We help people discover tools like {company_name} through our growing platform (25,000+ searches so far). You can list your product for free or boost visibility with paid promotions (10% off with code TOOL10). Add your tool here: https://toolforthat.io/submit-your-tool. Check out our premium plans here: https://Toolforthat.io/pricing.
+TL;DR: We help people discover tools like {company_name} through our growing platform (25,000+ searches so far). You can list your product for free or boost visibility with paid promotions (10% off with code TOOL10). Add your tool here: https://toolforthat.io/submit. Check out our premium plans here: https://Toolforthat.io/pricing.
 
 Hey {company_name}!
 
@@ -70,7 +70,7 @@ My name is Sachin and I am one of the founders of https://toolforthat.io.
 
 We are a platform where users can search for things they are building, creating or just need help with and our search engine indexes the best tools available. We are dropping a completely new update to our website. We launched back in January, where we have had over 25,000 searches on our platform. This new revamp should take us to a whole new level. 
 
-One of our most popular requests is "{short_desc}," so we know that {company_name} is perfect for our site. We're excited to help you grow your visibility on our platform and boost your user count even more. You can add more information about your product, for FREE, here: https://toolforthat.io/submit-your-tool
+One of our most popular requests is "{short_desc}," so we know that {company_name} is perfect for our site. We're excited to help you grow your visibility on our platform and boost your user count even more. You can add more information about your product, for FREE, here: https://toolforthat.io/submit
 
 If you're interested in being the #1 tool on our site, we'd love to connect. Check out our different plans at https://Toolforthat.io/pricing. We'd  to offer you a discount of 10% on your first promotion with discount code TOOL10!
 
@@ -96,47 +96,73 @@ class CompanyEmailGenerator:
         self.company_name = company_name
         self.recipient_email = email.strip()
         self.short_desc = short_desc
+        self.full_desc = full_desc
         self.attachment_path = attachment_path
         self.email_message = None
 
-        # Generate product description sentence
-        product_sentence = self.generate_product_sentence()
-        if not product_sentence:
-            print(f"Failed to generate product description for {company_name}")
+        # Generate personalized email content
+        personalized_content = self.generate_personalized_email()
+        if not personalized_content:
+            print(f"Failed to generate personalized email for {company_name}")
             return
 
         # Create email message
-        self.create_email_message(product_sentence)
+        self.create_email_message(personalized_content)
 
-    def generate_product_sentence(self):
-        """Generate a single sentence describing the product using short description only."""
+    def generate_personalized_email(self):
+        """Generate a personalized email content using the company's full description."""
         try:
             prompt = (
-                f"Write one concise, positive sentence describing the product based on the following information. "
-                f"Short description: {self.short_desc}\n"
-                f"The sentence should be suitable for a marketing email to the product's creators."
+                f"Create a personalized email for {self.company_name} that follows this exact structure and tone. "
+                f"Use the following information about the company:\n"
+                f"Company: {self.company_name}\n"
+                f"Short Description: {self.short_desc}\n"
+                f"Full Description: {self.full_desc}\n\n"
+                f"Email Structure:\n"
+                f"1. Start with 'Hey [Company Name]!'\n"
+                f"2. Write a personal story: 'I recently used your [website/app/platform], and firstly I fell in love with the [specific feature]. It really helped me [what the tool solves in a casual, personal way]. I had tons of friends also face similar issues.'\n"
+                f"3. Continue the story: 'I kept getting asked by friends about the tools I use, so I decided to create a curated list to share with others.'\n"
+                f"4. Connect to your platform: 'Inspired by [Company Name], I spent the past few weeks building toolforthat.io. In short terms, its a directory with an enhanced search feature to help people find the best tools for their use cases.'\n"
+                f"5. Explain the value: 'I genuinely think that exploring something like this would give [Company Name] so much visibility and introduce you guys to a whole new audience.'\n"
+                f"6. Share milestone: 'Recently toolforthat has just surpassed over 25,000 searches, and that just being within a few weeks is mind blowing to us. It really showed us how many people are looking for the perfect tech tools.'\n"
+                f"7. Make the ask: 'Absolutely no pressure at all, I know your busy working on your amazing [website/app/platform], but I'd love to sit down and have a quick chat with you to get some insight into your audience, and how we can collaborate together!'\n"
+                f"8. Call to action: 'If you're open to it, feel free to reply or grab a time on my calendar to chat: https://calendly.com/sachin-toolforthat'\n"
+                f"9. End with 'Big fan of what you're building!'\n"
+                f"10. Close with 'Best, Sachin'\n"
+                f"11. Keep the personal, authentic tone throughout - like you're genuinely sharing your story\n"
+                f"12. Make it feel like you actually used their product and were inspired by it\n"
+                f"13. When describing how the tool helped you, use casual, personal language but feel free to use business terms like 'game-changer' - just keep it conversational\n\n"
+                f"Write the email body only (no subject line)."
             )
-            response = client.chat.completions.create(model=OPENAI_MODEL,
-            messages=[
-                {"role": "system", "content": "You are a marketing expert writing for a B2B SaaS platform."},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=60,
-            temperature=0.7)
+            response = client.chat.completions.create(
+                model=OPENAI_MODEL,
+                messages=[
+                    {"role": "system", "content": "You are Sachin, co-founder of ToolForThat.io, writing personal, story-driven outreach emails. Write like you're genuinely sharing your personal experience with their product and how it inspired you to build your platform. Be authentic, personal, and conversational. When describing how a tool helped you, use casual, everyday language but feel free to include business terms like 'game-changer' to add impact."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_tokens=400,
+                temperature=0.8
+            )
             content = response.choices[0].message.content.strip()
             return content
         except Exception as e:
-            print(f"Error generating product description for {self.company_name}: {e}")
+            print(f"Error generating personalized email for {self.company_name}: {e}")
             return None
 
-    def create_email_message(self, product_sentence):
-        """Create the complete marketing email message with proper formatting and attachments."""
+    def create_email_message(self, personalized_content):
+        """Create the complete marketing email message with personalized content and attachments."""
         try:
-            subject = f"Boost Your Visibility on Toolforthat.io 🚀"
-            body = MARKETING_TEMPLATE.format(
-                company_name=self.company_name,
-                short_desc=self.short_desc
-            )
+            # Only proceed if we have personalized content
+            if not personalized_content:
+                print(f"No personalized content generated for {self.company_name}, skipping email")
+                self.email_message = None
+                return
+                
+            subject = f"Hello {self.company_name}!"
+            
+            # Use the personalized content from ChatGPT
+            body = personalized_content
+            
             msg = MIMEMultipart()
             msg['From'] = f"{SENDER_NAME} <{EMAIL}>"
             msg['To'] = self.recipient_email
