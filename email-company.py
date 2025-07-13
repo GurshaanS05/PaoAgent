@@ -122,7 +122,7 @@ class CompanyEmailGenerator:
                 f"1. Start with 'Hey [Company Name]!'\n"
                 f"2. Write a personal story: 'I recently used your [website/app/platform], and firstly I fell in love with the [specific feature]. It really helped me [what the tool solves in a casual, personal way]. I had tons of friends also face similar issues.'\n"
                 f"3. Continue the story: 'I kept getting asked by friends about the tools I use, so I decided to create a curated list to share with others.'\n"
-                f"4. Connect to your platform: 'Inspired by [Company Name], I spent the past few weeks building toolforthat.io. In short terms, its a directory with an enhanced search feature to help people find the best tools for their use cases.'\n"
+                f"4. Connect to your platform: 'Inspired by this, I spent the past few weeks building toolforthat.io. In short terms, its a directory with an enhanced search feature to help people find the best tools for their use cases.'\n"
                 f"5. Explain the value: 'I genuinely think that exploring something like this would give [Company Name] so much visibility and introduce you guys to a whole new audience.'\n"
                 f"6. Share milestone: 'Recently toolforthat has just surpassed over 25,000 searches, and that just being within a few weeks is mind blowing to us. It really showed us how many people are looking for the perfect tech tools.'\n"
                 f"7. Make the ask: 'Absolutely no pressure at all, I know your busy working on your amazing [website/app/platform], but I'd love to sit down and have a quick chat with you to get some insight into your audience, and how we can collaborate together!'\n"
