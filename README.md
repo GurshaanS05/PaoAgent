@@ -110,7 +110,31 @@ You can tune behavior via `.env`:
 - `DAILY_SEND_LIMIT` to cap how many new contacts get emailed per run.
 - `EMAIL_DELAY` to control how quickly emails are sent.
 
-### 5. Automating daily runs
+### 5. One-command daily run (`run_pao.sh`)
+
+For everyday usage, you can run a single command from the repo root:
+
+```bash
+./run_pao.sh
+```
+
+This script:
+
+- Changes into the project directory.
+- Activates the `.venv` virtual environment.
+- Runs:
+
+```bash
+python email-company.py \
+  --contacts-csv data/paolist.csv \
+  --sent-log pao_sent_log.csv
+```
+
+If `.venv` does not exist, it will print simple instructions to create it.
+
+You can still customize or automate further by calling `email-company.py` directly with flags, but `./run_pao.sh` is the preferred “one command per morning” entry point for production use.
+
+### 6. Automating daily runs (optional)
 
 You can schedule a daily run via `cron` (on macOS/Linux).
 
@@ -123,16 +147,15 @@ crontab -e
 Add a line like (runs every day at 10:00 AM):
 
 ```bash
-0 10 * * * cd /path/to/PaoAgent && . .venv/bin/activate && python email-company.py --contacts-csv data/paolist.csv --sent-log pao_sent_log.csv >> pao_cron.log 2>&1
+0 10 * * * cd /path/to/PaoAgent && ./run_pao.sh >> pao_cron.log 2>&1
 ```
 
 This will:
 
-- Activate the virtual environment.
-- Run the email agent against `data/paolist.csv`.
+- Use the same one-command script you run manually.
 - Append logs to `pao_cron.log`.
 
-### 6. Safety and guarantees
+### 7. Safety and guarantees
 
 - **No duplicate emails per log file**: An email address is only sent to once per `--sent-log` file. Re-running with the same log will skip already-contacted addresses.
 - **Separate test vs. production**: Use different `--sent-log` values to keep test sends independent from your production campaign.
