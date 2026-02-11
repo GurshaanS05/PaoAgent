@@ -1,3 +1,4 @@
+import argparse
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -5,6 +6,7 @@ import os
 from dotenv import load_dotenv
 from tqdm import tqdm
 import time
+from datetime import datetime
 import pandas as pd
 
 # Load environment variables
@@ -13,18 +15,22 @@ load_dotenv()
 # Configuration from environment variables
 EMAIL = os.getenv("EMAIL_ADDRESS")
 APP_PASSWORD = os.getenv("EMAIL_PASSWORD")
-COMPANY_LIST_PATH = os.getenv("COMPANY_LIST_PATH", "paolist.csv")
+# Default paths (overridable via CLI flags)
+DEFAULT_COMPANY_LIST_PATH = "data/paolist.csv"
 
 # Email settings
 DELAY_BETWEEN_EMAILS = int(os.getenv("EMAIL_DELAY", 10))
 SENDER_NAME = os.getenv("SENDER_NAME", "Mihir")
 BCC_EMAIL = "cornellairbhangra@gmail.com"  # Cornell Bhangra org – BCC on every outreach
 
+# Sending / logging behavior
+DEFAULT_SENT_LOG_PATH = "pao_sent_log.csv"
+DAILY_SEND_LIMIT = int(os.getenv("DAILY_SEND_LIMIT", 100))
+
 # Validate required configuration (PAO flow does not require OpenAI)
 required_vars = {
     'EMAIL_ADDRESS': EMAIL,
     'EMAIL_PASSWORD': APP_PASSWORD,
-    'COMPANY_LIST_PATH': COMPANY_LIST_PATH,
     'SENDER_NAME': SENDER_NAME
 }
 
@@ -112,50 +118,147 @@ def _get_csv_column(row, *candidates):
     return None
 
 
+def _load_sent_emails(log_path: str) -> set:
+    """
+    Load already-emailed addresses from the log CSV.
+    Returns a lowercase set of email strings.
+    """
+    if not os.path.isfile(log_path):
+        return set()
+    try:
+        df = pd.read_csv(log_path)
+        if "email" not in df.columns:
+            return set()
+        return set(
+            df["email"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+            .str.lower()
+        )
+    except Exception as e:
+        print(f"Warning: could not read sent log '{log_path}': {e}")
+        return set()
+
+
+def _append_to_sent_log(log_path: str, rows: list[dict]) -> None:
+    """Append newly sent emails to the log CSV."""
+    if not rows:
+        return
+    df = pd.DataFrame(rows)
+    file_exists = os.path.isfile(log_path)
+    df.to_csv(log_path, mode="a" if file_exists else "w", header=not file_exists, index=False)
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments for input contacts and sent-log paths."""
+    parser = argparse.ArgumentParser(description="Send PAO Bhangra email campaign.")
+    parser.add_argument(
+        "--contacts-csv",
+        "-c",
+        default=DEFAULT_COMPANY_LIST_PATH,
+        help=f"Path to contacts CSV (default: {DEFAULT_COMPANY_LIST_PATH})",
+    )
+    parser.add_argument(
+        "--sent-log",
+        "-l",
+        default=DEFAULT_SENT_LOG_PATH,
+        help=f"Path to sent-log CSV (default: {DEFAULT_SENT_LOG_PATH})",
+    )
+    return parser.parse_args()
+
+
 def main():
     """Main execution function."""
+    args = parse_args()
+    contacts_path = args.contacts_csv
+    sent_log_path = args.sent_log
+
     smtp_server = None
     emails_sent = 0
     emails_skipped = 0
+    log_rows: list[dict] = []
+
     try:
-        df = pd.read_csv(COMPANY_LIST_PATH)
-        print(f"Successfully loaded {len(df)} contacts from CSV")
+        df = pd.read_csv(contacts_path)
+        print(f"Successfully loaded {len(df)} contacts from CSV: {contacts_path}")
+
+        # Determine which emails have already been contacted
+        sent_emails = _load_sent_emails(sent_log_path)
+        print(f"Loaded {len(sent_emails)} previously contacted emails from {sent_log_path}")
+
+        remaining_quota = DAILY_SEND_LIMIT
+        print(f"Daily send limit: {DAILY_SEND_LIMIT}")
+
         print("Connecting to Gmail SMTP server...")
         smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         smtp_server.login(EMAIL, APP_PASSWORD)
         print("Successfully connected to email server!")
+
         rows = df.to_dict('records')
         for row in tqdm(rows, desc="Processing contacts", unit="email"):
+            if remaining_quota <= 0:
+                print("Daily send limit reached; stopping for today.")
+                break
+
             email_addr = _get_csv_column(row, 'email')
             first_name = _get_csv_column(row, 'first_name', 'first name')
             last_name = _get_csv_column(row, 'last_name', 'last name')
+
             if not email_addr:
                 print("Skipping row due to missing email")
                 emails_skipped += 1
                 continue
+
+            normalized_email = email_addr.strip().lower()
+            if normalized_email in sent_emails:
+                # Already contacted in a previous run
+                emails_skipped += 1
+                continue
+
             generator = PAOEmailGenerator(
                 first_name=first_name or "",
                 last_name=last_name or "",
                 email=email_addr
             )
-            if generator.email_message:
-                if generator.send_email(smtp_server):
-                    emails_sent += 1
-                    time.sleep(DELAY_BETWEEN_EMAILS)
-                else:
-                    emails_skipped += 1
+
+            if not generator.email_message:
+                emails_skipped += 1
+                continue
+
+            if generator.send_email(smtp_server):
+                emails_sent += 1
+                remaining_quota -= 1
+                sent_emails.add(normalized_email)
+                log_rows.append({
+                    "timestamp_utc": datetime.utcnow().isoformat(timespec="seconds"),
+                    "first_name": first_name or "",
+                    "last_name": last_name or "",
+                    "email": email_addr.strip(),
+                })
+                time.sleep(DELAY_BETWEEN_EMAILS)
             else:
                 emails_skipped += 1
+
     except Exception as e:
         print(f"An error occurred: {str(e)}")
     finally:
+        # Persist log of newly sent emails
+        try:
+            _append_to_sent_log(sent_log_path, log_rows)
+            if log_rows:
+                print(f"Wrote {len(log_rows)} new rows to {sent_log_path}")
+        except Exception as log_err:
+            print(f"Warning: failed to write sent log: {log_err}")
+
         if smtp_server:
             smtp_server.quit()
             print("Disconnected from email server")
+
         print(f"\n--- Email Campaign Summary ---")
         print(f"Emails sent successfully: {emails_sent}")
-        print(f"Emails skipped or failed: {emails_skipped}")
-        print(f"Total contacts processed: {emails_sent + emails_skipped}")
+        print(f"Emails skipped or failed (including already-contacted): {emails_skipped}")
+        print(f"Total contacts processed this run: {emails_sent + emails_skipped}")
 
 if __name__ == "__main__":
     main()

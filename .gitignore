@@ -1,1 +1,7 @@
 .env
+
+# Data files (keep most data out of git)
+data/*
+
+# Email send logs
+pao_sent_log.csv

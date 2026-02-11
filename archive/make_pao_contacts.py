@@ -6,9 +6,9 @@ expected by email-company.py for PAO Bhangra invitations.
 import pandas as pd
 import os
 
-# Default: read from env or use a project CSV
-INPUT_CSV = os.getenv("INPUT_CSV", "newYork_companies_emails.csv")
-OUTPUT_CSV = os.getenv("OUTPUT_CSV", "pao_contacts.csv")
+# Default: read from env or use a project CSV under data/
+INPUT_CSV = os.getenv("INPUT_CSV", "data/newYork_companies_emails.csv")
+OUTPUT_CSV = os.getenv("OUTPUT_CSV", "data/pao_contacts.csv")
 
 # Column names if the input has no header (company_name, contact_name, email, ...)
 NO_HEADER_NAMES = ["company_name", "contact_name", "email", "short_description", "full_description"]
