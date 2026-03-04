@@ -15,28 +15,32 @@ load_dotenv()
 # Configuration from environment variables
 EMAIL = os.getenv("EMAIL_ADDRESS")
 APP_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
 # Default paths (overridable via CLI flags)
-DEFAULT_COMPANY_LIST_PATH = "data/paolist.csv"
+# Primary contacts CSV – this is where we read from and, after a run,
+# write back the remaining (not-yet-emailed) contacts.
+DEFAULT_COMPANY_LIST_PATH = "Remaining PAO Emails - Sheet1.csv"
 
 # Email settings
 DELAY_BETWEEN_EMAILS = int(os.getenv("EMAIL_DELAY", 10))
 SENDER_NAME = os.getenv("SENDER_NAME", "Mihir")
-BCC_EMAIL = "cornellairbhangra@gmail.com"  # Cornell Bhangra org – BCC on every outreach
 
 # Sending / logging behavior
 DEFAULT_SENT_LOG_PATH = "pao_sent_log.csv"
 DAILY_SEND_LIMIT = int(os.getenv("DAILY_SEND_LIMIT", 100))
+# Per-account send limit (e.g. each Gmail account sends at most 20 emails per run)
+PER_ACCOUNT_LIMIT = int(os.getenv("PER_ACCOUNT_LIMIT", 20))
 
-# Validate required configuration (PAO flow does not require OpenAI)
+# Basic config validation (per-account credentials are validated separately)
 required_vars = {
-    'EMAIL_ADDRESS': EMAIL,
-    'EMAIL_PASSWORD': APP_PASSWORD,
-    'SENDER_NAME': SENDER_NAME
+    "SENDER_NAME": SENDER_NAME,
 }
 
 missing_vars = [var for var, val in required_vars.items() if not val]
 if missing_vars:
-    raise ValueError(f"Missing required environment variables: {', '.join(missing_vars)}. Please check your .env file.")
+    raise ValueError(
+        f"Missing required environment variables: {', '.join(missing_vars)}. Please check your .env file."
+    )
 
 # PAO Bhangra invitation email template
 PAO_EMAIL_SUBJECT = "Invitation to PAO Bhangra XXIII: March 7, 2026!"
@@ -61,10 +65,11 @@ PAO_EMAIL_TEMPLATE = '''<p>Hello {first_name},</p>
 class PAOEmailGenerator:
     """Email generator for PAO Bhangra invitation outreach."""
 
-    def __init__(self, first_name, last_name, email):
+    def __init__(self, first_name, last_name, email, sender_email: str):
         self.first_name = first_name.strip() if first_name else ""
         self.last_name = last_name.strip() if last_name else ""
         self.recipient_email = email.strip()
+        self.sender_email = sender_email.strip()
         self.email_message = None
         self.create_email_message()
 
@@ -77,7 +82,7 @@ class PAOEmailGenerator:
                 tickets_url=PAO_TICKETS_URL
             )
             msg = MIMEMultipart()
-            msg['From'] = f"{SENDER_NAME} <{EMAIL}>"
+            msg["From"] = f"{SENDER_NAME} <{self.sender_email}>"
             msg['To'] = self.recipient_email
             msg['Subject'] = PAO_EMAIL_SUBJECT
             msg.attach(MIMEText(body, 'html'))
@@ -91,7 +96,7 @@ class PAOEmailGenerator:
         if not self.email_message:
             return False
         try:
-            smtp_server.sendmail(EMAIL, [self.recipient_email, BCC_EMAIL], self.email_message)
+            smtp_server.sendmail(self.sender_email, [self.recipient_email], self.email_message)
             display_name = f"{self.first_name} {self.last_name}".strip() or self.recipient_email
             print(f"Email sent successfully to {display_name}")
             return True
@@ -105,17 +110,71 @@ def _get_csv_column(row, *candidates):
     row_lower = {str(k).strip().lower(): k for k in row}
     for key in candidates:
         key_lower = key.lower().strip()
+        # direct match
         if key_lower in row_lower:
             val = row.get(row_lower[key_lower])
             if pd.notna(val) and str(val).strip():
                 return str(val).strip()
         # try with space instead of underscore
-        alt = key_lower.replace('_', ' ')
-        if alt in row_lower:
-            val = row.get(row_lower[alt])
+        alt_space = key_lower.replace("_", " ")
+        if alt_space in row_lower:
+            val = row.get(row_lower[alt_space])
             if pd.notna(val) and str(val).strip():
                 return str(val).strip()
+        # try with no separators (e.g. FirstName vs first_name)
+        alt_compact = key_lower.replace("_", "").replace(" ", "")
+        if alt_compact in row_lower:
+            val = row.get(row_lower[alt_compact])
+            if pd.notna(val) and str(val).strip():
+                return str(val).strip()
+    # Final fallback: return the first cell in the row that looks like an email address
+    for val in row.values():
+        if isinstance(val, str) and "@" in val and "." in val:
+            s = val.strip()
+            if s:
+                return s
     return None
+
+
+def _load_email_accounts() -> list[dict]:
+    """
+    Load up to seven Gmail accounts from the environment.
+    Supports either:
+      - EMAIL_ADDRESS_1..EMAIL_ADDRESS_7 with matching EMAIL_PASSWORD_1..EMAIL_PASSWORD_7, or
+      - a single EMAIL_ADDRESS / EMAIL_PASSWORD pair as a fallback.
+    """
+    accounts: list[dict] = []
+
+    # Numbered multi-account configuration
+    for i in range(1, 8):
+        addr = os.getenv(f"EMAIL_ADDRESS_{i}")
+        pwd = os.getenv(f"EMAIL_PASSWORD_{i}")
+        if addr and pwd:
+            accounts.append(
+                {
+                    "email": addr.strip(),
+                    "password": pwd.strip(),
+                    "sent": 0,
+                }
+            )
+
+    # Fallback to single-account configuration if no numbered accounts are set
+    if not accounts and EMAIL and APP_PASSWORD:
+        accounts.append(
+            {
+                "email": EMAIL.strip(),
+                "password": APP_PASSWORD.strip(),
+                "sent": 0,
+            }
+        )
+
+    if not accounts:
+        raise ValueError(
+            "No email accounts configured. "
+            "Set EMAIL_ADDRESS/EMAIL_PASSWORD or EMAIL_ADDRESS_1..EMAIL_ADDRESS_7 and EMAIL_PASSWORD_1..EMAIL_PASSWORD_7 in your .env."
+        )
+
+    return accounts
 
 
 def _load_sent_emails(log_path: str) -> set:
@@ -150,6 +209,53 @@ def _append_to_sent_log(log_path: str, rows: list[dict]) -> None:
     df.to_csv(log_path, mode="a" if file_exists else "w", header=not file_exists, index=False)
 
 
+def _write_remaining_contacts(contacts_path: str, df: pd.DataFrame, sent_rows: list[dict]) -> None:
+    """
+    Given the original contacts DataFrame and the rows successfully sent
+    in this run, overwrite the contacts CSV with only the remaining
+    (not-yet-emailed) contacts.
+    """
+    if df is None or not sent_rows:
+        return
+
+    # Build a set of normalized emails sent in this run
+    sent_emails_this_run = {
+        str(r.get("email", "")).strip().lower()
+        for r in sent_rows
+        if r.get("email")
+    }
+    if not sent_emails_this_run:
+        return
+
+    # Find the email column in the contacts CSV
+    email_col = None
+    for col in df.columns:
+        col_key = str(col).strip().lower().replace(" ", "_")
+        if col_key == "email" or "email" in col_key:
+            email_col = col
+            break
+
+    if email_col is None:
+        print(
+            "Warning: could not identify email column in contacts CSV; "
+            "will not modify the contacts file."
+        )
+        return
+
+    # Normalize and filter out sent addresses
+    df[email_col] = df[email_col].astype(str)
+    mask = ~df[email_col].str.strip().str.lower().isin(sent_emails_this_run)
+    remaining_df = df[mask]
+
+    try:
+        remaining_df.to_csv(contacts_path, index=False)
+        print(
+            f"Updated contacts CSV at '{contacts_path}' with "
+            f"{len(remaining_df)} remaining contact(s)."
+        )
+    except Exception as e:
+        print(f"Warning: failed to write updated contacts CSV '{contacts_path}': {e}")
+
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments for input contacts and sent-log paths."""
     parser = argparse.ArgumentParser(description="Send PAO Bhangra email campaign.")
@@ -173,13 +279,19 @@ def main():
     args = parse_args()
     contacts_path = args.contacts_csv
     sent_log_path = args.sent_log
+    smtp_servers: list = []
+    accounts: list[dict] = []
+    df: pd.DataFrame | None = None
 
-    smtp_server = None
     emails_sent = 0
     emails_skipped = 0
     log_rows: list[dict] = []
 
     try:
+        # Load accounts (single or multi-account mode)
+        accounts = _load_email_accounts()
+        smtp_servers = [None] * len(accounts)
+
         df = pd.read_csv(contacts_path)
         print(f"Successfully loaded {len(df)} contacts from CSV: {contacts_path}")
 
@@ -189,16 +301,20 @@ def main():
 
         remaining_quota = DAILY_SEND_LIMIT
         print(f"Daily send limit: {DAILY_SEND_LIMIT}")
-
-        print("Connecting to Gmail SMTP server...")
-        smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        smtp_server.login(EMAIL, APP_PASSWORD)
-        print("Successfully connected to email server!")
+        print(f"Per-account send limit: {PER_ACCOUNT_LIMIT}")
+        print(f"Loaded {len(accounts)} sending account(s).")
 
         rows = df.to_dict('records')
+        account_index = 0
+
         for row in tqdm(rows, desc="Processing contacts", unit="email"):
             if remaining_quota <= 0:
                 print("Daily send limit reached; stopping for today.")
+                break
+
+            # Stop if all accounts have hit their per-account send limit
+            if all(acc["sent"] >= PER_ACCOUNT_LIMIT for acc in accounts):
+                print("Per-account send limits reached for all configured accounts; stopping.")
                 break
 
             email_addr = _get_csv_column(row, 'email')
@@ -216,19 +332,44 @@ def main():
                 emails_skipped += 1
                 continue
 
+            # Find next account with remaining send capacity
+            # Rotate round-robin across accounts while respecting PER_ACCOUNT_LIMIT
+            starting_index = account_index
+            while accounts[account_index]["sent"] >= PER_ACCOUNT_LIMIT:
+                account_index = (account_index + 1) % len(accounts)
+                if account_index == starting_index:
+                    # All accounts are at their per-account limit
+                    print("Per-account send limits reached while rotating accounts; stopping.")
+                    remaining_quota = 0
+                    break
+            if remaining_quota <= 0:
+                break
+
+            account = accounts[account_index]
+
+            # Lazily connect SMTP for this account
+            if smtp_servers[account_index] is None:
+                print(f"Connecting to Gmail SMTP server for {account['email']}...")
+                server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                server.login(account["email"], account["password"])
+                smtp_servers[account_index] = server
+                print(f"Successfully connected as {account['email']}")
+
             generator = PAOEmailGenerator(
                 first_name=first_name or "",
                 last_name=last_name or "",
-                email=email_addr
+                email=email_addr,
+                sender_email=account["email"],
             )
 
             if not generator.email_message:
                 emails_skipped += 1
                 continue
 
-            if generator.send_email(smtp_server):
+            if generator.send_email(smtp_servers[account_index]):
                 emails_sent += 1
                 remaining_quota -= 1
+                account["sent"] += 1
                 sent_emails.add(normalized_email)
                 log_rows.append({
                     "timestamp_utc": datetime.utcnow().isoformat(timespec="seconds"),
@@ -239,6 +380,9 @@ def main():
                 time.sleep(DELAY_BETWEEN_EMAILS)
             else:
                 emails_skipped += 1
+
+            # Move to the next account in round-robin order
+            account_index = (account_index + 1) % len(accounts)
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
@@ -251,9 +395,21 @@ def main():
         except Exception as log_err:
             print(f"Warning: failed to write sent log: {log_err}")
 
-        if smtp_server:
-            smtp_server.quit()
-            print("Disconnected from email server")
+        # Remove successfully emailed contacts from the source CSV
+        try:
+            _write_remaining_contacts(contacts_path, df, log_rows)
+        except Exception as e:
+            print(f"Warning: failed to update remaining contacts CSV: {e}")
+
+        # Close any open SMTP connections
+        for server in smtp_servers:
+            if server:
+                try:
+                    server.quit()
+                except Exception:
+                    pass
+        if smtp_servers:
+            print("Disconnected from email server(s)")
 
         print(f"\n--- Email Campaign Summary ---")
         print(f"Emails sent successfully: {emails_sent}")
