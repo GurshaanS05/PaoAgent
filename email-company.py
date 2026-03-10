@@ -27,7 +27,7 @@ SENDER_NAME = os.getenv("SENDER_NAME", "Mihir")
 
 # Sending / logging behavior
 DEFAULT_SENT_LOG_PATH = "pao_sent_log.csv"
-DAILY_SEND_LIMIT = int(os.getenv("DAILY_SEND_LIMIT", 100))
+DAILY_SEND_LIMIT = int(os.getenv("DAILY_SEND_LIMIT", 140))  # 7 accounts × 20 each
 # Per-account send limit (e.g. each Gmail account sends at most 20 emails per run)
 PER_ACCOUNT_LIMIT = int(os.getenv("PER_ACCOUNT_LIMIT", 20))
 
